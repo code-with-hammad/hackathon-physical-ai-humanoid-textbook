@@ -1,0 +1,73 @@
+# Nav2 Configuration Parameters for Bipedal Humanoid
+
+# This is a placeholder file for Nav2 configuration.
+# Parameters specific to a bipedal humanoid's locomotion, footstep planning,
+# and stability constraints would be defined here.
+
+# Common Nav2 parameters (example placeholders):
+ros__parameters:
+  use_sim_time: True
+
+  # Global Planner
+  planner_server:
+    ros__parameters:
+      planner_plugins: ["GridBased", "SmacHybrid", "SmacLattice"] # Example planners
+      GridBased:
+        # Example parameters for a grid-based planner
+        # Consider specific costs for humanoid movement
+        cost_scaling_factor: 10.0
+        # ... other planner parameters
+
+  # Local Planner (Controller)
+  controller_server:
+    ros__parameters:
+      controller_plugins: ["TebLocalPlanner", "DWBLocalPlanner"] # Example controllers
+      TebLocalPlanner:
+        # Example parameters for TEB (Timed-Elastic Band) Local Planner
+        # Consider humanoid-specific dynamics (e.g., max_vel_x, max_vel_theta, min_turning_radius)
+        max_vel_x: 0.1
+        max_vel_theta: 0.1
+        # ... other TEB parameters
+
+  # Behavior Tree Navigator
+  bt_navigator:
+    ros__parameters:
+      # Behavior tree to handle navigation tasks
+      bt_filepath: "{{AMENT_PREFIX_PATH}}/nav2_bt_navigator/share/nav2_bt_navigator/bt_xml/navigate_w_replanning_and_recovery.xml"
+      # Consider custom behavior trees for humanoid-specific recovery behaviors (e.g., re-balancing)
+
+  # Costmap (Global and Local)
+  global_costmap:
+    ros__parameters:
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      static_layer:
+        map_subscribe_topic: "/map"
+      obstacle_layer:
+        # Sensor sources for obstacle avoidance (e.g., from Isaac Sim camera, LiDAR)
+        observation_sources: "scan camera"
+        scan:
+          topic: "/scan"
+          max_obstacle_height: 2.0
+        camera:
+          topic: "/camera/depth/points"
+          max_obstacle_height: 2.0
+      inflation_layer:
+        inflation_radius: 0.5 # Example radius, needs tuning for humanoid
+        # Consider special inflation logic for humanoid feet
+
+  local_costmap:
+    ros__parameters:
+      plugins: ["obstacle_layer", "inflation_layer"]
+      # ... similar to global costmap but focused on local sensor data
+
+  # AMCL (Adaptive Monte Carlo Localization) - for localization
+  amcl:
+    ros__parameters:
+      # Localization parameters, adjust for humanoid characteristics
+      initial_pose_x: 0.0
+      initial_pose_y: 0.0
+      initial_pose_a: 0.0
+      # ... other AMCL parameters
+
+# Other Nav2 server configurations (e.g., map_server, lifecycle_manager)
+# will also be part of the full Nav2 setup.

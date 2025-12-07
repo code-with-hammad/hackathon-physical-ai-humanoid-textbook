@@ -1,0 +1,54 @@
+#usda 1.0
+
+def Xform "World"
+{
+    def "Looks"
+    {
+    }
+
+    def Scope "Physics"
+    {
+    }
+
+    def "defaultLight" (
+        prepend apiSchemas = ["ShadingAPI"]
+    )
+    {
+        asset inputs:SdrMaterials = @usd/plugins/Materials/OmniPBR_Plastic.usd@
+        color3f inputs:diffuse = (0.7, 0.7, 0.7)
+        color3f inputs:specular = (0.01, 0.01, 0.01)
+        float inputs:strength = 1000
+        float inputs:texture:srgb_attribute:gain = 1
+        uniform token info:id = "OmniGlass"
+        uniform token info:name = "OmniGlass"
+        uniform token info:version = "1.7"
+        token outputs:surface.connect = </World/Looks/OmniGlass.outputs:surface>
+    }
+
+    def "GroundPlane" (
+        prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsCollisionAPI"]
+    )
+    {
+        float3[] extent = [(-25, -25, -0.01), (25, 25, 0.01)]
+        rel material:binding = </World/Looks/OmniGlass>
+        color3f primvars:displayColor = (0.2, 0.2, 0.2)
+        float primvars:displayOpacity = 1
+        double3 xformOp:scale = (1, 1, 1)
+        double3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+
+        def Mesh "mesh"
+        {
+            int[] faceVertexCounts = [4]
+            int[] faceVertexIndices = [0, 1, 2, 3]
+            point3f[] points = [(-0.5, -0.5, 0), (0.5, -0.5, 0), (0.5, 0.5, 0), (-0.5, 0.5, 0)]
+            texCoord2f[] primvars:st = [(0, 0), (1, 0), (1, 1), (0, 1)] (
+                interpolation = "faceVarying"
+            )
+            token subdivisionScheme = "none"
+            double3 xformOp:scale = (50, 50, 1)
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+    }
+}

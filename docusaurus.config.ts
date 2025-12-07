@@ -93,6 +93,12 @@ const config: Config = {
           position: 'left',
           label: 'Digital Twin (Gazebo & Unity)',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'nvidiaIsaacSidebar',
+          position: 'left',
+          label: 'AI-Robot Brain (NVIDIA Isaac)',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',

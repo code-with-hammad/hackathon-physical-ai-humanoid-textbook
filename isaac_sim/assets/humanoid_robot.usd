@@ -1,0 +1,14 @@
+#usda 1.0
+(
+    defaultPrim = "Humanoid"
+    upAxis = "Z"
+)
+
+def Xform "Humanoid"
+{
+    asset Path = @../../urdf/humanoid.urdf@
+    
+    # In a real Isaac Sim setup, you would typically convert URDF to USD
+    # and add physics components, joint drivers, and sensor definitions here.
+    # This is a placeholder to indicate the location of the humanoid model.
+}
