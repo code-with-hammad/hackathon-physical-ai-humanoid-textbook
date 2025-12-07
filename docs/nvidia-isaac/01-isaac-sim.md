@@ -1,5 +1,5 @@
 ---
-title: NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation
+title: "NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation"
 ---
 
 # NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation

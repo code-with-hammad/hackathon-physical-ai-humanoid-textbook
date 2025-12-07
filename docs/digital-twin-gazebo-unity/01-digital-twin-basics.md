@@ -1,5 +1,5 @@
 ---
-title: Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling
+title: "Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling"
 ---
 
 # Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling

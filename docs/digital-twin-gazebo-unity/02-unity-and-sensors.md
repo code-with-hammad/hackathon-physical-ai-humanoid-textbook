@@ -1,5 +1,5 @@
 ---
-title: High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation
+title: "High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation"
 ---
 
 # High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation
