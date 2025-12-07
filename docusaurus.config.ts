@@ -87,6 +87,12 @@ const config: Config = {
           position: 'left',
           label: 'ROS 2 Nervous System',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'digitalTwinGazeboUnitySidebar',
+          position: 'left',
+          label: 'Digital Twin (Gazebo & Unity)',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
