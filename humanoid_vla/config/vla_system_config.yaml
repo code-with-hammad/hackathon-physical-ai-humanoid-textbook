@@ -1,0 +1,55 @@
+# End-to-End VLA System Configuration
+
+# This file defines general configuration parameters for the VLA system.
+
+vla_system:
+  # ROS 2 topics configuration
+  topics:
+    audio_input: "/audio/input"           # Topic for raw audio data
+    transcribed_text: "/vla/transcribed_text" # Output from Whisper node
+    robot_action: "/vla/robot_action"     # Actions for execution
+    high_level_goal: "/vla/high_level_goal" # Input to LLM planner
+    perception_feedback: "/vla/perception_feedback" # Input to LLM planner (e.g., detected objects)
+    robot_cmd_vel: "/cmd_vel"             # Robot base control
+    robot_phrase: "/robot/say_phrase"     # Robot speech output
+
+  # Action mapping configuration (for direct commands, if Action Mapper is active)
+  action_mapping:
+    # Path to a YAML file defining direct text-to-action mappings
+    map_file: "package://humanoid_vla/config/direct_action_map.yaml"
+
+  # LLM planner configuration (refer to llm_planning/config/llm_config.yaml for LLM-specifics)
+  llm_planner:
+    enabled: true
+    # Timeout for LLM response
+    planning_timeout_sec: 15
+
+  # Simulation environment details
+  simulation:
+    environment_name: "basic_scene"       # Name of the Isaac Sim/Gazebo environment
+    robot_model_name: "humanoid_robot"    # Name of the simulated robot model
+
+  # Perception simulation configuration (if active)
+  perception_simulation:
+    enabled: true
+    # How often to simulate new perception data (seconds)
+    update_rate_sec: 1.0
+    # Predefined objects for simulation
+    simulated_objects:
+      - id: "red_ball"
+        pose: {x: 1.0, y: 0.5, z: 0.0, roll: 0.0, pitch: 0.0, yaw: 0.0}
+        color: "red"
+        type: "ball"
+      - id: "blue_cube"
+        pose: {x: -0.8, y: 1.2, z: 0.0, roll: 0.0, pitch: 0.0, yaw: 0.0}
+        color: "blue"
+        type: "cube"
+      - id: "table"
+        pose: {x: 2.0, y: 1.0, z: 0.5, roll: 0.0, pitch: 0.0, yaw: 0.0}
+        color: "brown"
+        type: "furniture"
+
+# Additional configurations could include:
+# - Robot capabilities definition
+# - Safety constraints
+# - Error handling strategies

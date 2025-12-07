@@ -1,7 +1,7 @@
-feat: Create tasks for AI-Robot Brain (NVIDIA Isaac) module
+feat: Create tasks for Vision-Language-Action (VLA) module
 
-This commit generates the detailed task breakdown for the "AI-Robot Brain (NVIDIA Isaac)" module.
+This commit generates the detailed task breakdown for the "Vision-Language-Action (VLA)" module.
 
-- Created `specs/001-nvidia-isaac/tasks.md` with a dependency-ordered list of 25 tasks, organized by phases and user stories.
+- Created `specs/004-vla-humanoid/tasks.md` with a dependency-ordered list of 25 tasks, organized by phases and user stories.
 - Identified parallelization opportunities and defined independent test criteria for each user story.
 - Recorded PHR for this task generation.

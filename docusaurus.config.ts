@@ -99,6 +99,12 @@ const config: Config = {
           position: 'left',
           label: 'AI-Robot Brain (NVIDIA Isaac)',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'vlaHumanoidSidebar',
+          position: 'left',
+          label: 'Vision-Language-Action (VLA)',
+        },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',

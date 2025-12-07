@@ -1,5 +1,5 @@
 ---
-title: Sensor Simulation: LiDAR, Depth, IMU
+title: "Sensor Simulation: LiDAR, Depth, IMU"
 ---
 
 # Sensor Simulation: LiDAR, Depth, IMU

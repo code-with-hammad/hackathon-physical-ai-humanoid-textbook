@@ -1,0 +1,79 @@
+# LLM Configuration for Cognitive Planning
+
+# This file defines parameters for LLM interaction, available tools, and system prompts.
+
+llm_config:
+  model_name: "gpt-4-turbo-preview" # Example: gpt-4-turbo-preview, gemini-pro, llama-3
+  temperature: 0.7
+  max_tokens: 500
+  top_p: 1.0
+
+  # System prompt to guide the LLM's behavior
+  system_prompt: |
+    You are a helpful AI assistant embedded in a humanoid robot. Your goal is to translate
+    high-level natural language requests into a sequence of executable robot actions.
+    You have access to a set of tools that the robot can perform.
+    Think step-by-step and produce a clear, ordered plan.
+    If a request is ambiguous, ask for clarification.
+    If a request is impossible with the available tools, explain why.
+
+  # Definition of available tools/functions for the LLM
+  available_tools:
+    - name: "move_forward"
+      description: "Move the robot forward by a given distance (meters)."
+      parameters:
+        type: "object"
+        properties:
+          distance:
+            type: "number"
+            description: "Distance in meters to move forward."
+        required: ["distance"]
+    - name: "turn"
+      description: "Turn the robot by a given angle (degrees). Positive for left, negative for right."
+      parameters:
+        type: "object"
+        properties:
+          angle:
+            type: "number"
+            description: "Angle in degrees to turn. Positive for left, negative for right."
+        required: ["angle"]
+    - name: "grasp_object"
+      description: "Grasp a specified object in the robot's current field of view."
+      parameters:
+        type: "object"
+        properties:
+          object_name:
+            type: "string"
+            description: "The name of the object to grasp (e.g., 'red ball', 'blue cube')."
+        required: ["object_name"]
+    - name: "release_object"
+      description: "Release the currently held object."
+      parameters:
+        type: "object"
+        properties: {}
+    - name: "navigate_to_pose"
+      description: "Navigate the robot to a specific (x, y, yaw) pose in the map frame."
+      parameters:
+        type: "object"
+        properties:
+          x: {type: "number", description: "X coordinate in meters."}
+          y: {type: "number", description: "Y coordinate in meters."}
+          yaw: {type: "number", description: "Yaw angle in radians."}
+        required: ["x", "y", "yaw"]
+    - name: "say_phrase"
+      description: "Make the robot speak a given phrase."
+      parameters:
+        type: "object"
+        properties:
+          phrase:
+            type: "string"
+            description: "The phrase for the robot to say."
+        required: ["phrase"]
+    # Add more tools as the robot's capabilities expand (e.g., detect_object, open_door)
+
+  # Example action mapping for direct commands (if Action Mapper is used in parallel)
+  direct_action_mapping:
+    "move forward": "move_forward:1.0"
+    "turn left": "turn:90"
+    "stop": "stop:"
+    "pick up the ball": "grasp_object:ball"
