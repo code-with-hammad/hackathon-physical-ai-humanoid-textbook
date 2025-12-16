@@ -31,12 +31,6 @@
   color: var(--ifm-font-color-base);
 }
 
-.heroImage {
-  max-width: 80%; /* Adjust as needed */
-  height: auto;
-  margin-bottom: 30px;
-}
-
 .startButton {
   padding: 10px 20px;
   font-size: 1.2rem;
