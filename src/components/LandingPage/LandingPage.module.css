@@ -8,8 +8,31 @@
   padding: 20px;
 }
 
+.mainContentWrapper {
+  display: flex;
+  flex-direction: row; /* Arrange children horizontally */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.robotImageLeft,
+.robotImageRight {
+  width: 100px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.robotImageLeft {
+  margin-right: 20px; /* Space between robot and center section */
+}
+
+.robotImageRight {
+  margin-left: 20px; /* Space between robot and center section */
+}
+
 .centerSection {
-  flex: 2; /* Takes more space */
+  flex-grow: 1; /* Allow center section to grow */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,9 +73,13 @@
 
 /* Mobile responsiveness */
 @media (max-width: 996px) { /* Docusaurus --ifm-container-width-lg breakpoint */
-  .landingPageContainer {
+  .mainContentWrapper {
     flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center;
+  }
+
+  .robotImageLeft,
+  .robotImageRight {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
   }
 
   .centerSection {
