@@ -29,14 +29,14 @@
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
-*   [ ] **Technical Accuracy**: All claims are traceable to primary sources.
-*   [ ] **Clarity**: Content is written for AI/Robotics students and developers (Flesch-Kincaid 11-13).
-*   [ ] **Reproducibility**: All code and simulations are fully reproducible.
-*   [ ] **Engineering Rigor**: Adheres to Spec-Kit Plus principles.
-*   [ ] **Source Traceability**: All claims are source-traceable with APA citations.
-*   [ ] **Plagiarism-Free**: 0% tolerance for plagiarism.
+- [ ] **Technical Accuracy**: All claims are traceable to primary sources.
+- [ ] **Clarity**: Content is written for AI/Robotics students and developers (Flesch-Kincaid 11-13).
+- [ ] **Reproducibility**: All code and simulations are fully reproducible.
+- [ ] **Engineering Rigor**: Adheres to Spec-Kit Plus principles.
+- [ ] **Source Traceability**: All claims are source-traceable with APA citations.
+- [ ] **Plagiarism-Free**: 0% tolerance for plagiarism.
 
 ## Project Structure
 
@@ -53,6 +53,7 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
+
 <!--
   ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
   for this feature. Delete unused options and expand the chosen structure with
@@ -103,7 +104,7 @@ directories captured above]
 
 > **Fill ONLY if Constitution Check has violations that must be justified**
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+| Violation                  | Why Needed         | Simpler Alternative Rejected Because |
+| -------------------------- | ------------------ | ------------------------------------ |
+| [e.g., 4th project]        | [current need]     | [why 3 projects insufficient]        |
+| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient]  |

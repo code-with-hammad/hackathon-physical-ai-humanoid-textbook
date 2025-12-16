@@ -16,10 +16,10 @@ links:
   adr: null
   pr: null
 files:
- - specs/002-digital-twin-gazebo-unity/spec.md
- - specs/002-digital-twin-gazebo-unity/checklists/requirements.md
+  - specs/002-digital-twin-gazebo-unity/spec.md
+  - specs/002-digital-twin-gazebo-unity/checklists/requirements.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -34,7 +34,7 @@ I have created the feature specification and the quality checklist.
 
 - ✅ Impact: Created the feature specification and quality checklist.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - specs/002-digital-twin-gazebo-unity/spec.md (created)
   - specs/002-digital-twin-gazebo-unity/checklists/requirements.md (created)
 - 🔁 Next prompts: none

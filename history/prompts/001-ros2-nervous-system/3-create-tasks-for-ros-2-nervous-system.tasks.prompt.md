@@ -16,9 +16,9 @@ links:
   adr: null
   pr: null
 files:
- - specs/001-ros2-nervous-system/tasks.md
+  - specs/001-ros2-nervous-system/tasks.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -33,7 +33,7 @@ I have created the tasks.md file.
 
 - ✅ Impact: Created the tasks.md file with all the tasks for the feature.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - specs/001-ros2-nervous-system/tasks.md (created)
 - 🔁 Next prompts: none
 - 🧠 Reflection: The process of creating the tasks was successful.

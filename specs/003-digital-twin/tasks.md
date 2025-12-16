@@ -4,13 +4,13 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [X] T001 Create directory `docs/digital-twin-gazebo-unity`
-- [X] T002 Create `docs/digital-twin-gazebo-unity/_category_.json`
-- [X] T003 Create directory `gazebo/models`
-- [X] T004 Create directory `gazebo/worlds`
-- [X] T005 Create directory `gazebo/plugins`
-- [X] T006 Create directory `unity/Assets`
-- [X] T007 Create directory `unity/ProjectSettings`
+- [x] T001 Create directory `docs/digital-twin-gazebo-unity`
+- [x] T002 Create `docs/digital-twin-gazebo-unity/_category_.json`
+- [x] T003 Create directory `gazebo/models`
+- [x] T004 Create directory `gazebo/worlds`
+- [x] T005 Create directory `gazebo/plugins`
+- [x] T006 Create directory `unity/Assets`
+- [x] T007 Create directory `unity/ProjectSettings`
 
 ---
 
@@ -22,11 +22,11 @@
 
 ### Implementation for User Story 1
 
-- [X] T008 [US1] Create `docs/digital-twin-gazebo-unity/chapter1.md`
-- [X] T009 [US1] Write content for "Physics in Gazebo (gravity, collisions)" in `docs/digital-twin-gazebo-unity/chapter1.md`
-- [X] T010 [US1] Create a basic humanoid model in `gazebo/models/humanoid_robot/model.sdf`
-- [X] T011 [US1] Create a Gazebo world file with static objects in `gazebo/worlds/empty_world.world`
-- [X] T012 [US1] Create a ROS 2 launch file for Gazebo simulation in `gazebo/launch/humanoid_sim.launch.py`
+- [x] T008 [US1] Create `docs/digital-twin-gazebo-unity/chapter1.md`
+- [x] T009 [US1] Write content for "Physics in Gazebo (gravity, collisions)" in `docs/digital-twin-gazebo-unity/chapter1.md`
+- [x] T010 [US1] Create a basic humanoid model in `gazebo/models/humanoid_robot/model.sdf`
+- [x] T011 [US1] Create a Gazebo world file with static objects in `gazebo/worlds/empty_world.world`
+- [x] T012 [US1] Create a ROS 2 launch file for Gazebo simulation in `gazebo/launch/humanoid_sim.launch.py`
 
 ---
 
@@ -38,12 +38,12 @@
 
 ### Implementation for User Story 2
 
-- [X] T013 [US2] Create `docs/digital-twin-gazebo-unity/chapter2.md`
-- [X] T014 [US2] Write content for "Human–Robot Interaction in Unity" in `docs/digital-twin-gazebo-unity/chapter2.md`
-- [X] T015 [US2] Initialize Unity project in `unity/`
-- [X] T016 [US2] Import ROS-Unity integration package into Unity project
-- [X] T017 [US2] Create Unity scene for robot visualization and human interaction elements in `unity/Assets/Scenes/RobotVisualization.unity`
-- [X] T018 [US2] Implement C# scripts for ROS 2 subscription to robot state in `unity/Assets/Scripts/Ros2RobotSubscriber.cs`
+- [x] T013 [US2] Create `docs/digital-twin-gazebo-unity/chapter2.md`
+- [x] T014 [US2] Write content for "Human–Robot Interaction in Unity" in `docs/digital-twin-gazebo-unity/chapter2.md`
+- [x] T015 [US2] Initialize Unity project in `unity/`
+- [x] T016 [US2] Import ROS-Unity integration package into Unity project
+- [x] T017 [US2] Create Unity scene for robot visualization and human interaction elements in `unity/Assets/Scenes/RobotVisualization.unity`
+- [x] T018 [US2] Implement C# scripts for ROS 2 subscription to robot state in `unity/Assets/Scripts/Ros2RobotSubscriber.cs`
 
 ---
 
@@ -55,20 +55,20 @@
 
 ### Implementation for User Story 3
 
-- [X] T019 [US3] Create `docs/digital-twin-gazebo-unity/chapter3.md`
-- [X] T020 [US3] Write content for "Sensor Simulation: LiDAR, Depth, IMU" in `docs/digital-twin-gazebo-unity/chapter3.md`
-- [X] T021 [US3] Add LiDAR sensor to `gazebo/models/humanoid_robot/model.sdf`
-- [X] T022 [US3] Add Depth camera sensor to `gazebo/models/humanoid_robot/model.sdf`
-- [X] T023 [US3] Add IMU sensor to `gazebo/models/humanoid_robot/model.sdf`
-- [X] T024 [US3] Configure Gazebo plugins to publish sensor data to ROS 2 topics
+- [x] T019 [US3] Create `docs/digital-twin-gazebo-unity/chapter3.md`
+- [x] T020 [US3] Write content for "Sensor Simulation: LiDAR, Depth, IMU" in `docs/digital-twin-gazebo-unity/chapter3.md`
+- [x] T021 [US3] Add LiDAR sensor to `gazebo/models/humanoid_robot/model.sdf`
+- [x] T022 [US3] Add Depth camera sensor to `gazebo/models/humanoid_robot/model.sdf`
+- [x] T023 [US3] Add IMU sensor to `gazebo/models/humanoid_robot/model.sdf`
+- [x] T024 [US3] Configure Gazebo plugins to publish sensor data to ROS 2 topics
 
 ---
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [X] T025 Configure `docusaurus.config.ts` to include the new module
-- [X] T026 Configure `sidebars.ts` to include the new module sidebar
-- [X] T027 Add installation instructions for Gazebo and Unity in `docs/digital-twin-gazebo-unity/installation.md`
+- [x] T025 Configure `docusaurus.config.ts` to include the new module
+- [x] T026 Configure `sidebars.ts` to include the new module sidebar
+- [x] T027 Add installation instructions for Gazebo and Unity in `docs/digital-twin-gazebo-unity/installation.md`
 
 ---
 

@@ -9,7 +9,7 @@ feature: 001-nvidia-isaac
 branch: 001-nvidia-isaac
 user: user
 command: /sp.implement
-labels: ["implementation"]
+labels: ['implementation']
 links:
   spec: specs/001-nvidia-isaac/spec.md
   ticket: null
@@ -31,8 +31,7 @@ files:
   - docusaurus.config.ts
   - sidebars.ts
   - specs/001-nvidia-isaac/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

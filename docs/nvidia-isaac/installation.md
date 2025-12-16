@@ -50,9 +50,9 @@ Nav2 is part of the ROS 2 ecosystem. Configuration for humanoid robots involves 
     sudo apt install ros-<ROS_DISTRO>-navigation2 ros-<ROS_DISTRO>-nav2-msgs
     ```
 2.  **Humanoid-Specific Configuration**:
-    *   Create a dedicated ROS 2 package for your humanoid's Nav2 configuration (e.g., `nav2_humanoid`).
-    *   Place your `humanoid_nav2_params.yaml` file (from this module's example) into the `params` directory of this package.
-    *   Create launch files (e.g., `humanoid_navigation.launch.py`) to integrate these parameters.
+    - Create a dedicated ROS 2 package for your humanoid's Nav2 configuration (e.g., `nav2_humanoid`).
+    - Place your `humanoid_nav2_params.yaml` file (from this module's example) into the `params` directory of this package.
+    - Create launch files (e.g., `humanoid_navigation.launch.py`) to integrate these parameters.
 3.  **Verify Installation**: Launch Nav2 with your humanoid configuration and test basic path planning.
 
 ## Troubleshooting

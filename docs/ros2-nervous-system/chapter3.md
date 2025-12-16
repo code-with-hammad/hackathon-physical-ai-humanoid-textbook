@@ -6,27 +6,27 @@ This chapter delves into the Unified Robot Description Format (URDF), a standard
 
 By the end of this chapter, you will be able to:
 
-*   Understand the structure and components of a URDF file.
-*   Define links (rigid bodies) and joints (connections between links).
-*   Add visual and collision properties to links.
-*   Create a simple URDF model for a humanoid robot.
-*   Visualize a URDF model in RViz or Gazebo.
+- Understand the structure and components of a URDF file.
+- Define links (rigid bodies) and joints (connections between links).
+- Add visual and collision properties to links.
+- Create a simple URDF model for a humanoid robot.
+- Visualize a URDF model in RViz or Gazebo.
 
 ## What is URDF?
 
 URDF (Unified Robot Description Format) is an XML file format that describes all aspects of a robot. It's used by ROS packages for various purposes, including:
 
-*   **Visualization**: Displaying the robot in tools like RViz.
-*   **Simulation**: Using the robot in physics simulators like Gazebo.
-*   **Motion Planning**: Generating collision-free paths for the robot.
-*   **Kinematics**: Calculating the robot's forward and inverse kinematics.
+- **Visualization**: Displaying the robot in tools like RViz.
+- **Simulation**: Using the robot in physics simulators like Gazebo.
+- **Motion Planning**: Generating collision-free paths for the robot.
+- **Kinematics**: Calculating the robot's forward and inverse kinematics.
 
 ## Core URDF Elements
 
 A URDF file primarily consists of two main elements:
 
-*   **`<link>`**: Represents a rigid body of the robot. Links have physical and visual properties (e.g., mass, inertia, shape, color).
-*   **`<joint>`**: Represents a connection between two links. Joints define the type of motion allowed between links (e.g., revolute, prismatic, fixed).
+- **`<link>`**: Represents a rigid body of the robot. Links have physical and visual properties (e.g., mass, inertia, shape, color).
+- **`<joint>`**: Represents a connection between two links. Joints define the type of motion allowed between links (e.g., revolute, prismatic, fixed).
 
 ## Example: Basic Humanoid URDF
 

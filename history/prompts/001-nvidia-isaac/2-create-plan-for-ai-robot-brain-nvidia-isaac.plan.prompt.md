@@ -9,7 +9,7 @@ feature: 001-nvidia-isaac
 branch: 001-nvidia-isaac
 user: user
 command: /sp.plan
-labels: ["planning", "architecture"]
+labels: ['planning', 'architecture']
 links:
   spec: specs/001-nvidia-isaac/spec.md
   ticket: null
@@ -22,8 +22,7 @@ files:
   - specs/001-nvidia-isaac/contracts/README.md
   - specs/001-nvidia-isaac/quickstart.md
   - GEMINI.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

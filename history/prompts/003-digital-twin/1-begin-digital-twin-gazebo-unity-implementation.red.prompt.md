@@ -9,7 +9,7 @@ feature: 003-digital-twin
 branch: 003-digital-twin
 user: user
 command: /sp.specify "yesterday my pending task was building Module 2 implementation. yu ad comple specify,plan and task in folder named 002-digital-twin-gazebo-unity check that now you have to impleent it"
-labels: ["implementation"]
+labels: ['implementation']
 links:
   spec: specs/003-digital-twin/spec.md
   ticket: null
@@ -19,8 +19,7 @@ files:
   - specs/003-digital-twin/spec.md
   - specs/003-digital-twin/plan.md
   - specs/003-digital-twin/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

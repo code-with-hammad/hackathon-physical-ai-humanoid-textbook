@@ -1,71 +1,42 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import React from 'react';
+import styles from './index.module.css';
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
-};
-
-const FeatureList: FeatureItem[] = [
+const modules = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: 'Introduction',
+    description: 'Basics of AI-Native Development',
+    img: '/images/robot_intro.png',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: 'Humanoids',
+    description: 'AI Integration with Humanoids',
+    img: '/images/robot_humanoid.png',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Advanced Techniques',
+    description: 'Deep dive into AI modules',
+    img: '/images/robot_advanced.png',
+  },
+  {
+    title: 'Projects',
+    description: 'Hands-on projects and examples',
+    img: '/images/robot_projects.png',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+export default function ModulesSection() {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={styles.modulesSection}>
+      <h2 className={styles.modulesHeading}>Explore Modules</h2>
+      <div className={styles.tabsContainer}>
+        {modules.map((mod, idx) => (
+          <div key={idx} className={styles.tabCard}>
+            <img src={mod.img} alt={mod.title} className={styles.moduleImg} />
+            <h3>{mod.title}</h3>
+            <p>{mod.description}</p>
+          </div>
+        ))}
       </div>
     </div>
-  );
-}
-
-export default function HomepageFeatures(): ReactNode {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }

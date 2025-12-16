@@ -16,10 +16,10 @@ links:
   adr: null
   pr: null
 files:
- - specs/001-ros2-nervous-system/spec.md
- - specs/001-ros2-nervous-system/checklists/requirements.md
+  - specs/001-ros2-nervous-system/spec.md
+  - specs/001-ros2-nervous-system/checklists/requirements.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -34,7 +34,7 @@ I have created the feature specification and the quality checklist.
 
 - ✅ Impact: Created the feature specification and quality checklist.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - specs/001-ros2-nervous-system/spec.md (created)
   - specs/001-ros2-nervous-system/checklists/requirements.md (created)
 - 🔁 Next prompts: none

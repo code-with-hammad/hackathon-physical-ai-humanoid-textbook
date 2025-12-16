@@ -5,7 +5,7 @@
 **Status**: Draft
 **Input**: User description: "Module 1: The Robotic Nervous System (ROS 2)Target audience:AI/Robotics students with Python basicsFocus:ROS 2 middleware for humanoid controlChapters:1. ROS 2 Nodes, Topics, and Services2. Python Agents with rclpy3. Humanoid URDF ModelingSuccess criteria:- Reader runs a ROS 2 node- Reader bridges Python agent to ROS- Reader builds a basic humanoid URDFConstraints:- 2,500–3,500 words total- Markdown, APA citations- Sources: ROS 2 docs + peer-reviewed papers- Runnable code examples includedNot building:- ROS 1, hardware drivers, advanced control theory"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Run a ROS 2 Node (Priority: P1)
 
@@ -55,7 +55,7 @@ A student can build a basic humanoid URDF model.
 - What happens if the user does not have ROS 2 installed?
 - What happens if the Python dependencies are not installed?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -64,13 +64,13 @@ A student can build a basic humanoid URDF model.
 - **FR-003**: The system MUST provide a URDF file for a basic humanoid robot.
 - **FR-004**: The system MUST provide instructions on how to install ROS 2 and other dependencies.
 
-### Key Entities *(include if feature involves data)*
+### Key Entities _(include if feature involves data)_
 
 - **ROS 2 Node**: A fundamental component in the ROS 2 graph that can perform computation.
 - **Python Agent**: An intelligent program written in Python.
 - **URDF Model**: A file format for representing a robot model.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

@@ -9,7 +9,7 @@ feature: 004-vla-humanoid
 branch: 004-vla-humanoid
 user: user
 command: /sp.tasks
-labels: ["task-generation"]
+labels: ['task-generation']
 links:
   spec: specs/004-vla-humanoid/spec.md
   ticket: null
@@ -17,8 +17,7 @@ links:
   pr: null
 files:
   - specs/004-vla-humanoid/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

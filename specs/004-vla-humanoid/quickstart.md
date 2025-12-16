@@ -5,6 +5,7 @@ This quickstart guide provides a high-level overview and initial steps to get st
 ## 1. Prerequisites
 
 Before starting, ensure you have the following installed and configured:
+
 - **ROS 2**: A compatible ROS 2 distribution (e.g., Humble, Iron, Jazzy) installed and sourced.
 - **Python 3.8+**: With `pip` for installing Python packages.
 - **OpenAI Account/API Key**: For accessing OpenAI Whisper and potentially LLMs.

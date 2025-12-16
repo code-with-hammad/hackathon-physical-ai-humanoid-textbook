@@ -6,15 +6,16 @@ This section provides detailed instructions for setting up your development envi
 
 ROS 2 (Robot Operating System 2) is the core middleware used throughout this book. Please follow the official installation guide for your operating system:
 
-*   **Ubuntu (recommended)**: [ROS 2 Documentation: Install ROS 2 on Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-*   **Windows**: [ROS 2 Documentation: Install ROS 2 on Windows](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html)
-*   **macOS**: [ROS 2 Documentation: Install ROS 2 on macOS](https://docs.ros.org/en/humble/Installation/macOS-Install-Binary.html)
+- **Ubuntu (recommended)**: [ROS 2 Documentation: Install ROS 2 on Ubuntu](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
+- **Windows**: [ROS 2 Documentation: Install ROS 2 on Windows](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html)
+- **macOS**: [ROS 2 Documentation: Install ROS 2 on macOS](https://docs.ros.org/en/humble/Installation/macOS-Install-Binary.html)
 
 **Important**: After installation, remember to source your ROS 2 environment in every new terminal session or add it to your shell's startup file (e.g., `.bashrc`, `.zshrc`).
 
 ```bash
 source /opt/ros/<ros2-distro>/setup.bash
 ```
+
 Replace `<ros2-distro>` with your installed ROS 2 distribution (e.g., `humble`).
 
 ## 2. Install Python

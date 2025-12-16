@@ -14,10 +14,10 @@ This chapter introduces the core concepts of VLA, explores the burgeoning conver
 
 Historically, robotics has relied on meticulously programmed control systems and specialized algorithms for perception and planning. While effective for well-defined tasks, these traditional approaches often struggle with ambiguity, generalization, and natural human-robot interaction. LLMs offer a paradigm shift by bringing:
 
--   **Natural Language Understanding**: The ability to interpret human instructions, even vague or complex ones, without explicit programming for every scenario.
--   **Reasoning and Planning**: LLMs can act as high-level cognitive planners, breaking down abstract goals into sequences of executable sub-actions (Huang et al., 2022).
--   **Knowledge Base**: Access to vast amounts of world knowledge, allowing robots to make more informed decisions.
--   **Generalization**: The potential to perform novel tasks without explicit retraining, by leveraging their broad understanding of language and concepts.
+- **Natural Language Understanding**: The ability to interpret human instructions, even vague or complex ones, without explicit programming for every scenario.
+- **Reasoning and Planning**: LLMs can act as high-level cognitive planners, breaking down abstract goals into sequences of executable sub-actions (Huang et al., 2022).
+- **Knowledge Base**: Access to vast amounts of world knowledge, allowing robots to make more informed decisions.
+- **Generalization**: The potential to perform novel tasks without explicit retraining, by leveraging their broad understanding of language and concepts.
 
 This convergence is leading to robots that are more adaptable, intuitive to interact with, and capable of operating in unstructured environments.
 
@@ -26,13 +26,15 @@ This convergence is leading to robots that are more adaptable, intuitive to inte
 **Voice-to-Action** refers to the process of converting spoken commands into actionable instructions for a robot. This is a critical component of VLA, as it provides a natural and hands-free interface for humans to direct robotic agents. **OpenAI Whisper** is a general-purpose speech recognition model that has demonstrated remarkable accuracy and robustness across various languages and domains (Radford et al., 2022).
 
 Integrating Whisper into a robotics stack allows for:
--   **Accurate Transcription**: Converting spoken commands, even with background noise or accents, into precise text.
--   **Language Identification**: Automatically detecting the spoken language, which can be crucial in multilingual environments.
--   **Offline/Online Processing**: Flexible deployment options, from local models to cloud APIs.
+
+- **Accurate Transcription**: Converting spoken commands, even with background noise or accents, into precise text.
+- **Language Identification**: Automatically detecting the spoken language, which can be crucial in multilingual environments.
+- **Offline/Online Processing**: Flexible deployment options, from local models to cloud APIs.
 
 ### 2.1. OpenAI Whisper Integration for Voice Commands
 
 The process typically involves:
+
 1.  **Audio Capture**: Recording human speech via a microphone.
 2.  **Speech-to-Text Transcription**: Feeding the audio to OpenAI Whisper to obtain a textual representation.
 3.  **Action Mapping**: Translating the transcribed text into discrete, executable robot actions (e.g., ROS 2 commands).
@@ -57,7 +59,7 @@ def transcribe_audio(audio_path: str) -> str:
     """
     # Load a tiny model for demonstration. Other models include 'base', 'small', 'medium', 'large'.
     model = whisper.load_model("tiny")
-    
+
     # Transcribe the audio
     result = model.transcribe(audio_path)
     return result["text"]
@@ -67,19 +69,19 @@ if __name__ == "__main__":
     # In a real scenario, this would be a user's spoken command
     # You would need an actual audio file, e.g., "command.wav"
     # For testing, you can use a pre-recorded file.
-    
+
     # Example usage:
     # transcribed_text = transcribe_audio("path/to/your/audio.wav")
     # print(f"Transcribed: {transcribed_text}")
     print("Please provide an actual audio file path to run this example.")
     print("Example: python your_script.py path/to/command.wav")
-    
+
     # Placeholder for actual audio input, assuming you have an audio file named 'command.wav'
     # with content like "robot move forward five steps"
     try:
         # For demonstration, we'll try to transcribe a non-existent file path
         # You should replace this with a path to a real audio file for actual testing.
-        dummy_audio_path = "path/to/your/command.wav" 
+        dummy_audio_path = "path/to/your/command.wav"
         # transcribed_output = transcribe_audio(dummy_audio_path)
         # print(f"Simulated Transcribed Text: {transcribed_output}")
         print("Simulated Transcription for 'path/to/your/command.wav': 'Robot, move forward five steps'")
@@ -148,7 +150,8 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-*(Note: The full implementation would involve launching Whisper, an audio input node, and this action mapper node, alongside a robot action executor node.)*
+
+_(Note: The full implementation would involve launching Whisper, an audio input node, and this action mapper node, alongside a robot action executor node.)_
 
 ## Conclusion
 
@@ -156,6 +159,6 @@ The convergence of LLMs and robotics, particularly through the VLA paradigm, pro
 
 ## References
 
-Huang, W., Wu, F., Fan, C., Chen, G., & Lin, Z. (2022). *Language Models as Cognitive Controllers for Robotics*. arXiv preprint arXiv:2210.02403.
+Huang, W., Wu, F., Fan, C., Chen, G., & Lin, Z. (2022). _Language Models as Cognitive Controllers for Robotics_. arXiv preprint arXiv:2210.02403.
 
-Radford, A., Kim, J. W., Xu, T., Brockman, G., McLeavey, C., & Sutskever, I. (2022). *Robust Speech Recognition via Large-Scale Weak Supervision*. arXiv preprint arXiv:2212.04356.
+Radford, A., Kim, J. W., Xu, T., Brockman, G., McLeavey, C., & Sutskever, I. (2022). _Robust Speech Recognition via Large-Scale Weak Supervision_. arXiv preprint arXiv:2212.04356.

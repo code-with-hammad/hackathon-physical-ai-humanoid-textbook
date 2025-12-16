@@ -168,7 +168,7 @@ def main(args=None):
     response = simple_service_client.send_request(int(sys.argv[1]), int(sys.argv[2]))
     simple_service_client.get_logger().info(
         f'Result of add_two_ints: {response.sum}')
-    
+
     simple_service_client.destroy_node()
     rclpy.shutdown()
 
@@ -182,4 +182,4 @@ Nodes, Topics, and Services are foundational building blocks for communication i
 
 ## References
 
-Quigley, M., Conley, K., Gerkey, B., Faust, J., Foote, T., Fiedler, J., ... & Smith, A. (2009, May). ROS: an open-source robot operating system. In *ICRA workshop on open source software* (Vol. 3, No. 12).
+Quigley, M., Conley, K., Gerkey, B., Faust, J., Foote, T., Fiedler, J., ... & Smith, A. (2009, May). ROS: an open-source robot operating system. In _ICRA workshop on open source software_ (Vol. 3, No. 12).

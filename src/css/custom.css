@@ -1,30 +1,202 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * ================================
+ *  FUTURISTIC AI-SPEC THEME
+ *  Premium • Readable • Neon • Glass
+ * ================================
  */
 
-/* You can override the default Infima variables here. */
+/* ---------- BASE THEME ---------- */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #00e5ff;
+  --ifm-color-primary-dark: #00c4db;
+  --ifm-color-primary-darker: #00a9bd;
+  --ifm-color-primary-darkest: #007d8e;
+  --ifm-color-primary-light: #33ecff;
+  --ifm-color-primary-lighter: #66f1ff;
+  --ifm-color-primary-lightest: #b3f9ff;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 240, 255, 0.12);
+
+  --bg-main: #05070d;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --neon-gradient: linear-gradient(90deg, #00f0ff, #ff2fd6);
+
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ---------- DARK MODE ---------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00f0ff;
+  --ifm-color-primary-dark: #00c9d8;
+  --ifm-color-primary-darker: #00b1be;
+  --ifm-color-primary-darkest: #00838f;
+  --ifm-color-primary-light: #33f3ff;
+  --ifm-color-primary-lighter: #66f6ff;
+  --ifm-color-primary-lightest: #b3fbff;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 240, 255, 0.2);
+}
+
+/* ---------- GLOBAL BACKGROUND ---------- */
+html,
+body {
+  background:
+    radial-gradient(
+      800px 400px at 10% 10%,
+      rgba(0, 240, 255, 0.06),
+      transparent
+    ),
+    radial-gradient(
+      600px 300px at 90% 80%,
+      rgba(255, 47, 214, 0.05),
+      transparent
+    ),
+    var(--bg-main);
+  color: #e6f1ff;
+}
+
+/* ---------- HEADINGS ---------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Orbitron', 'Inter', system-ui;
+  letter-spacing: 0.3px;
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.06);
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  background: rgba(5, 7, 13, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+  background: var(--neon-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- MAIN CONTENT GLASS EFFECT ---------- */
+.main-wrapper,
+.theme-doc-markdown {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 240, 255, 0.06);
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 60px rgba(0, 240, 255, 0.08);
+}
+
+/* ---------- LINKS ---------- */
+a {
+  transition: 0.25s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+}
+
+/* ---------- BUTTONS ---------- */
+.button--primary {
+  background: var(--neon-gradient);
+  color: #020617;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 0 22px rgba(0, 240, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+.button--primary:hover {
+  box-shadow: 0 0 40px rgba(255, 47, 214, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ---------- CODE BLOCKS ---------- */
+.theme-highlight,
+pre {
+  background: #020617;
+  border-radius: 14px;
+  border: 1px solid var(--glass-border);
+  box-shadow: inset 0 0 40px rgba(0, 240, 255, 0.05);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #020617;
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer__title {
+  color: #00f0ff;
+}
+
+/* ---------- SCROLLBAR (BONUS FUTURE TOUCH) ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00f0ff, #ff2fd6);
+  border-radius: 10px;
+}
+
+/* ---------- SELECTION GLOW ---------- */
+::selection {
+  background: rgba(0, 240, 255, 0.25);
+  color: #ffffff;
+}
+
+/* === COSMIC BLUE LIGHT ANIMATION === */
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: -30%;
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(0, 180, 255, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(circle at 70% 80%, rgba(0, 240, 255, 0.18), transparent 45%);
+  filter: blur(80px);
+  animation: cosmicBlue 20s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes cosmicBlue {
+  0% {
+    transform: translate(-5%, -5%) rotate(0deg);
+  }
+  50% {
+    transform: translate(5%, 5%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-5%, -5%) rotate(360deg);
+  }
 }

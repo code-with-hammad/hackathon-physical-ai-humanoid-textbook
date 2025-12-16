@@ -5,7 +5,7 @@
 **Status**: Draft  
 **Input**: User description: "Module 4: Vision-Language-Action (VLA)Target audience:AI/Robotics students with ROS 2 and LLM basicsFocus:LLM-driven perception, planning, and action for humanoid robotsChapters:1. Voice-to-Action with OpenAI Whisper2. LLM-Based Cognitive Planning for ROS 23. Capstone: Autonomous Humanoid (End-to-End VLA)Success criteria:- Reader converts voice commands to robot actions- Reader builds LLM-to-ROS planning pipeline- Reader completes autonomous humanoid simulationConstraints:- 2,500–3,500 words- Markdown, APA citations- Sources: OpenAI, ROS 2, robotics VLA research (peer-reviewed)Not building:- Ethics analysis- Vendor comparisons- Real-world hardware deployment"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Voice-to-Action with OpenAI Whisper (Priority: P1)
 
@@ -57,7 +57,7 @@ An AI/Robotics student can integrate voice commands, LLM planning, and robotic e
 - What if the humanoid fails to execute a planned action in simulation?
 - How is perception (e.g., object recognition) integrated into the LLM's planning?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -69,7 +69,7 @@ An AI/Robotics student can integrate voice commands, LLM planning, and robotic e
 - **FR-006**: The system MUST integrate perception feedback (e.g., object detection, pose estimation) into the LLM's planning process.
 - **FR-007**: The system MUST provide an end-to-end pipeline demonstrating autonomous humanoid task execution driven by voice commands and LLM planning.
 
-### Key Entities *(include if feature involves data)*
+### Key Entities _(include if feature involves data)_
 
 - **Voice Command**: Spoken natural language instruction from a human user.
 - **OpenAI Whisper**: Speech-to-text model for transcribing voice commands.
@@ -80,7 +80,7 @@ An AI/Robotics student can integrate voice commands, LLM planning, and robotic e
 - **Humanoid Robot**: The simulated bipedal robot executing the actions.
 - **Perception Feedback**: Information from robot sensors (e.g., camera, LiDAR) about the environment and objects.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

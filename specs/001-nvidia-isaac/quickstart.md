@@ -5,6 +5,7 @@ This quickstart guide provides a high-level overview and initial steps to get st
 ## 1. Prerequisites
 
 Before starting, ensure you have the following installed and configured:
+
 - **NVIDIA GPU**: A compatible NVIDIA GPU is required for Isaac Sim and Isaac ROS.
 - **NVIDIA Omniverse Launcher**: Installed and configured to access Isaac Sim.
 - **NVIDIA Isaac Sim**: Installed via Omniverse Launcher.

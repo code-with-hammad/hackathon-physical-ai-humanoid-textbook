@@ -16,10 +16,10 @@ links:
   adr: null
   pr: null
 files:
- - .specify/memory/constitution.md
- - .specify/templates/plan-template.md
+  - .specify/memory/constitution.md
+  - .specify/templates/plan-template.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -34,7 +34,7 @@ I have created the project constitution and updated the relevant templates.
 
 - ✅ Impact: Created the project constitution and updated dependent templates.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - .specify/memory/constitution.md (created)
   - .specify/templates/plan-template.md (modified)
 - 🔁 Next prompts: none

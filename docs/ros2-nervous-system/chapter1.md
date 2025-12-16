@@ -6,11 +6,11 @@ This chapter introduces the fundamental concepts of ROS 2, focusing on nodes, to
 
 By the end of this chapter, you will be able to:
 
-*   Understand the core components of ROS 2: nodes, topics, and services.
-*   Create and run a simple ROS 2 node using `rclpy`.
-*   Publish messages to ROS 2 topics.
-*   Subscribe to ROS 2 topics to receive messages.
-*   Implement and call ROS 2 services.
+- Understand the core components of ROS 2: nodes, topics, and services.
+- Create and run a simple ROS 2 node using `rclpy`.
+- Publish messages to ROS 2 topics.
+- Subscribe to ROS 2 topics to receive messages.
+- Implement and call ROS 2 services.
 
 ## What is a ROS 2 Node?
 

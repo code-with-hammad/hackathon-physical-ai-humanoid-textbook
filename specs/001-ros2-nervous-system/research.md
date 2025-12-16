@@ -3,6 +3,7 @@
 ## Theme/Plugins
 
 **Decision**: Use the default Docusaurus theme with the following plugins:
+
 - `@docusaurus/plugin-content-docs`
 - `@docusaurus/plugin-content-blog`
 - `@docusaurus/plugin-content-pages`

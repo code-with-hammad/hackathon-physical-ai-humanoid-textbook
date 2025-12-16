@@ -34,14 +34,14 @@ This chapter explores how Large Language Models (LLMs) can be integrated into RO
 ## 5. Building a ROS 2 LLM Planner Node
 
 - Developing a ROS 2 Python node that:
-    - Subscribes to natural language goals (e.g., from `Transcribed Text`).
-    - Queries the LLM with the goal and available tools.
-    - Parses the LLM's plan (sequence of actions).
-    - Publishes individual `Robot Action`s to a ROS 2 topic.
+  - Subscribes to natural language goals (e.g., from `Transcribed Text`).
+  - Queries the LLM with the goal and available tools.
+  - Parses the LLM's plan (sequence of actions).
+  - Publishes individual `Robot Action`s to a ROS 2 topic.
 - Developing a ROS 2 Python node for action execution that:
-    - Subscribes to `Robot Action`s.
-    - Translates them into specific ROS 2 commands (e.g., publishing `geometry_msgs/Twist`).
-    - Monitors execution status and reports back.
+  - Subscribes to `Robot Action`s.
+  - Translates them into specific ROS 2 commands (e.g., publishing `geometry_msgs/Twist`).
+  - Monitors execution status and reports back.
 
 ## Practical Exercises
 

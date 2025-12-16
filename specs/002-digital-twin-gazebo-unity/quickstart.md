@@ -6,8 +6,8 @@ This quickstart guides you through setting up the necessary environments for the
 
 ### Prerequisites
 
-*   **ROS 2 Installation**: Ensure you have ROS 2 installed and sourced as per the instructions in Module 1.
-*   **Gazebo Installation**: Gazebo usually comes with the ROS 2 desktop installation. If not, follow the official Gazebo installation guide for your ROS 2 distribution.
+- **ROS 2 Installation**: Ensure you have ROS 2 installed and sourced as per the instructions in Module 1.
+- **Gazebo Installation**: Gazebo usually comes with the ROS 2 desktop installation. If not, follow the official Gazebo installation guide for your ROS 2 distribution.
 
 ### Launching the Humanoid Simulation
 
@@ -23,8 +23,8 @@ This quickstart guides you through setting up the necessary environments for the
 
 ### Prerequisites
 
-*   **Unity Hub and Unity Editor**: Install Unity Hub and a compatible Unity Editor version (e.g., Unity 2022.3 LTS) from the [Unity website](https://unity3d.com/get-unity/download).
-*   **ROS-Unity Integration Package**: You will need to install a ROS-Unity integration package (e.g., [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub) or a similar custom solution).
+- **Unity Hub and Unity Editor**: Install Unity Hub and a compatible Unity Editor version (e.g., Unity 2022.3 LTS) from the [Unity website](https://unity3d.com/get-unity/download).
+- **ROS-Unity Integration Package**: You will need to install a ROS-Unity integration package (e.g., [Unity Robotics Hub](https://github.com/Unity-Technologies/Unity-Robotics-Hub) or a similar custom solution).
 
 ### Setting up the Unity Project
 

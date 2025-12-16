@@ -5,20 +5,24 @@ This document outlines key research areas and decisions for implementing Module 
 ## Key Technologies and Integration Patterns
 
 ### 1. NVIDIA Isaac Sim
+
 - **Decision**: Utilize Isaac Sim as the primary simulation environment.
 - **Rationale**: Provides high-fidelity physics, realistic rendering, and robust ROS 2 integration for robotic simulation and synthetic data generation.
 - **Alternatives Considered**: Gazebo (less integrated with NVIDIA ecosystem, lower fidelity for advanced rendering), Unity (requires more custom ROS 2 integration).
 
 ### 2. NVIDIA Isaac ROS
+
 - **Decision**: Leverage Isaac ROS for perception tasks, specifically Visual SLAM.
 - **Rationale**: Offers optimized ROS 2 packages leveraging NVIDIA GPUs for accelerated AI/robotics workloads.
 - **Alternatives Considered**: Generic ROS 2 VSLAM packages (less optimized for NVIDIA hardware, potentially slower).
 
 ### 3. ROS 2 Integration
+
 - **Decision**: Standard ROS 2 communication (topics, services, actions) will be used for inter-component communication between Isaac Sim, Isaac ROS, and Nav2.
 - **Rationale**: Ensures interoperability and follows industry standards for robotics middleware.
 
 ### 4. Nav2 for Humanoid Navigation
+
 - **Decision**: Adapt Nav2 for path planning and navigation of bipedal humanoid robots.
 - **Rationale**: Nav2 is the de-facto standard navigation stack for ROS 2, providing modular and configurable components for various robot types.
 - **Alternatives Considered**: Custom navigation solutions (high development effort, less mature).

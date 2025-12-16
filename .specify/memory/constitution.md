@@ -16,26 +16,33 @@ Sync Impact Report:
   - ✅ .specify/templates/tasks-template.md
 - Follow-up TODOs: None
 -->
+
 # AI-Spec–Driven Technical Book on Physical AI & Humanoid Robotics with Integrated RAG Chatbot Constitution
 
 ## Core Principles
 
 ### I. Technical Accuracy
+
 All claims, explanations, and technical descriptions must be derived from and traceable to primary sources, such as peer-reviewed research or official vendor documentation.
 
 ### II. Clarity
+
 The content must be written for clarity, targeting an audience of AI/Robotics students and developers. Writing level should adhere to a Flesch-Kincaid grade level of 11–13.
 
 ### III. Reproducibility
+
 All code examples, simulations, and datasets must be fully reproducible by readers. This includes providing all necessary configurations, scripts, and environment details.
 
 ### IV. Engineering Rigor
+
 The project will adhere to the principles of Spec-Kit Plus, ensuring a systematic and spec-driven development process for all software and content.
 
 ### V. Source Traceability
+
 All factual claims and technical assertions must be traceable to their original source. Citations must follow the APA format. A minimum of 60% of sources must be from peer-reviewed academic papers or official vendor documentation.
 
 ### VI. Plagiarism-Free
+
 A zero-tolerance policy for plagiarism is in effect. All content must be original or properly attributed.
 
 ## Key Standards

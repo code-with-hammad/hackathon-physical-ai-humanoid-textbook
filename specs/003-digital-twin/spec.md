@@ -5,7 +5,7 @@
 **Status**: Draft
 **Input**: User description: "Module 2: The Digital Twin (Gazebo & Unity)Target audience:AI/Robotics studentsFocus:Physics simulation and digital twin environmentsChapters:1. Physics in Gazebo (gravity, collisions)2. Human–Robot Interaction in Unity3. Sensor Simulation: LiDAR, Depth, IMUSuccess criteria:- Run a Gazebo humanoid simulation- Visualize interaction in Unity- Publish simulated sensor dataConstraints:- 2,500–3,500 words- Markdown, APA citations- Sources: Gazebo/Unity/ROS docs + peer-reviewedNot building:- Game dev, proprietary engines, real hardware"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Run a Gazebo Humanoid Simulation (Priority: P1)
 
@@ -58,7 +58,7 @@ A student can configure and publish simulated sensor data (e.g., LiDAR, Depth, I
 - How is the connection between Gazebo and Unity handled if one fails?
 - What if sensor data is corrupted or unavailable?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -69,7 +69,7 @@ A student can configure and publish simulated sensor data (e.g., LiDAR, Depth, I
 - **FR-005**: The system MUST include simulated LiDAR, Depth, and IMU sensors in the Gazebo robot model.
 - **FR-006**: The system MUST publish simulated sensor data to ROS 2 topics.
 
-### Key Entities *(include if feature involves data)*
+### Key Entities _(include if feature involves data)_
 
 - **Gazebo Simulation**: A physics-based robotic simulator.
 - **Unity Environment**: A 3D development platform used for visualization.
@@ -77,7 +77,7 @@ A student can configure and publish simulated sensor data (e.g., LiDAR, Depth, I
 - **Simulated Sensors**: Virtual LiDAR, Depth, and IMU sensors within Gazebo.
 - **ROS 2 Topics**: Communication channels for sensor data.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

@@ -16,13 +16,13 @@ links:
   adr: null
   pr: null
 files:
- - specs/002-digital-twin-gazebo-unity/plan.md
- - specs/002-digital-twin-gazebo-unity/research.md
- - specs/002-digital-twin-gazebo-unity/data-model.md
- - specs/002-digital-twin-gazebo-unity/quickstart.md
- - GEMINI.md
+  - specs/002-digital-twin-gazebo-unity/plan.md
+  - specs/002-digital-twin-gazebo-unity/research.md
+  - specs/002-digital-twin-gazebo-unity/data-model.md
+  - specs/002-digital-twin-gazebo-unity/quickstart.md
+  - GEMINI.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -37,7 +37,7 @@ I have created the implementation plan and the design artifacts.
 
 - ✅ Impact: Created the implementation plan and the design artifacts.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - specs/002-digital-twin-gazebo-unity/plan.md (created)
   - specs/002-digital-twin-gazebo-unity/research.md (created)
   - specs/002-digital-twin-gazebo-unity/data-model.md (created)

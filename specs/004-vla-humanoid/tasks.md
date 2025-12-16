@@ -4,14 +4,14 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [X] T001 Create directory `docs/vla-humanoid`
-- [X] T002 Create `docs/vla-humanoid/_category_.json`
-- [X] T003 Create directory `openai_whisper/scripts`
-- [X] T004 Create directory `llm_planning/scripts`
-- [X] T005 Create directory `llm_planning/config`
-- [X] T006 Create directory `humanoid_vla/launch`
-- [X] T007 Create directory `humanoid_vla/config`
-- [X] T008 Create directory `humanoid_vla/scripts`
+- [x] T001 Create directory `docs/vla-humanoid`
+- [x] T002 Create `docs/vla-humanoid/_category_.json`
+- [x] T003 Create directory `openai_whisper/scripts`
+- [x] T004 Create directory `llm_planning/scripts`
+- [x] T005 Create directory `llm_planning/config`
+- [x] T006 Create directory `humanoid_vla/launch`
+- [x] T007 Create directory `humanoid_vla/config`
+- [x] T008 Create directory `humanoid_vla/scripts`
 
 ---
 
@@ -23,10 +23,10 @@
 
 ### Implementation for User Story 1
 
-- [X] T009 [US1] Create `docs/vla-humanoid/chapter1.md`
-- [X] T010 [US1] Write content for "Voice-to-Action with OpenAI Whisper" in `docs/vla-humanoid/chapter1.md`
-- [X] T011 [US1] Create a Python script for OpenAI Whisper integration in `openai_whisper/scripts/whisper_node.py`
-- [X] T012 [US1] Create a ROS 2 node to map transcribed text to robot actions in `openai_whisper/scripts/action_mapper_node.py`
+- [x] T009 [US1] Create `docs/vla-humanoid/chapter1.md`
+- [x] T010 [US1] Write content for "Voice-to-Action with OpenAI Whisper" in `docs/vla-humanoid/chapter1.md`
+- [x] T011 [US1] Create a Python script for OpenAI Whisper integration in `openai_whisper/scripts/whisper_node.py`
+- [x] T012 [US1] Create a ROS 2 node to map transcribed text to robot actions in `openai_whisper/scripts/action_mapper_node.py`
 
 ---
 
@@ -38,11 +38,11 @@
 
 ### Implementation for User Story 2
 
-- [X] T013 [US2] Create `docs/vla-humanoid/chapter2.md`
-- [X] T014 [US2] Write content for "LLM-Based Cognitive Planning for ROS 2" in `docs/vla-humanoid/chapter2.md`
-- [X] T015 [US2] Create a Python script for LLM interaction and plan generation in `llm_planning/scripts/llm_planner_node.py`
-- [X] T016 [US2] Define configuration for LLM prompts and tools in `llm_planning/config/llm_config.yaml`
-- [X] T017 [US2] Create a ROS 2 node to execute LLM-generated actions in `humanoid_vla/scripts/action_executor_node.py`
+- [x] T013 [US2] Create `docs/vla-humanoid/chapter2.md`
+- [x] T014 [US2] Write content for "LLM-Based Cognitive Planning for ROS 2" in `docs/vla-humanoid/chapter2.md`
+- [x] T015 [US2] Create a Python script for LLM interaction and plan generation in `llm_planning/scripts/llm_planner_node.py`
+- [x] T016 [US2] Define configuration for LLM prompts and tools in `llm_planning/config/llm_config.yaml`
+- [x] T017 [US2] Create a ROS 2 node to execute LLM-generated actions in `humanoid_vla/scripts/action_executor_node.py`
 
 ---
 
@@ -54,19 +54,19 @@
 
 ### Implementation for User Story 3
 
-- [X] T018 [US3] Create `docs/vla-humanoid/chapter3.md`
-- [X] T019 [US3] Write content for "Capstone: Autonomous Humanoid (End-to-End VLA)" in `docs/vla-humanoid/chapter3.md`
-- [X] T020 [US3] Create a ROS 2 launch file for the full VLA pipeline in `humanoid_vla/launch/vla_pipeline.launch.py`
-- [X] T021 [US3] Define configuration for the end-to-end VLA system in `humanoid_vla/config/vla_system_config.yaml`
-- [X] T022 [US3] Create a script to simulate perception feedback for the LLM in `humanoid_vla/scripts/perception_simulator.py`
+- [x] T018 [US3] Create `docs/vla-humanoid/chapter3.md`
+- [x] T019 [US3] Write content for "Capstone: Autonomous Humanoid (End-to-End VLA)" in `docs/vla-humanoid/chapter3.md`
+- [x] T020 [US3] Create a ROS 2 launch file for the full VLA pipeline in `humanoid_vla/launch/vla_pipeline.launch.py`
+- [x] T021 [US3] Define configuration for the end-to-end VLA system in `humanoid_vla/config/vla_system_config.yaml`
+- [x] T022 [US3] Create a script to simulate perception feedback for the LLM in `humanoid_vla/scripts/perception_simulator.py`
 
 ---
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [X] T023 Configure `docusaurus.config.ts` to include the new module
-- [X] T024 Configure `sidebars.ts` to include the new module sidebar
-- [X] T025 Add installation instructions for OpenAI Whisper, LLMs, and ROS 2 VLA in `docs/vla-humanoid/installation.md`
+- [x] T023 Configure `docusaurus.config.ts` to include the new module
+- [x] T024 Configure `sidebars.ts` to include the new module sidebar
+- [x] T025 Add installation instructions for OpenAI Whisper, LLMs, and ROS 2 VLA in `docs/vla-humanoid/installation.md`
 
 ---
 

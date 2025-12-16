@@ -16,13 +16,13 @@ links:
   adr: null
   pr: null
 files:
- - specs/001-ros2-nervous-system/plan.md
- - specs/001-ros2-nervous-system/research.md
- - specs/001-ros2-nervous-system/data-model.md
- - specs/001-ros2-nervous-system/quickstart.md
- - GEMINI.md
+  - specs/001-ros2-nervous-system/plan.md
+  - specs/001-ros2-nervous-system/research.md
+  - specs/001-ros2-nervous-system/data-model.md
+  - specs/001-ros2-nervous-system/quickstart.md
+  - GEMINI.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt
@@ -37,7 +37,7 @@ I have created the implementation plan and the design artifacts.
 
 - ✅ Impact: Created the implementation plan and the design artifacts.
 - 🧪 Tests: No tests were run.
-- 📁 Files: 
+- 📁 Files:
   - specs/001-ros2-nervous-system/plan.md (created)
   - specs/001-ros2-nervous-system/research.md (created)
   - specs/001-ros2-nervous-system/data-model.md (created)

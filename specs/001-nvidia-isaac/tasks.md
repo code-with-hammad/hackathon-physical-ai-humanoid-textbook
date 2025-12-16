@@ -4,15 +4,15 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [X] T001 Create directory `docs/nvidia-isaac`
-- [X] T002 Create `docs/nvidia-isaac/_category_.json`
-- [X] T003 Create directory `isaac_sim/assets`
-- [X] T004 Create directory `isaac_sim/environments`
-- [X] T005 Create directory `isaac_sim/scripts`
-- [X] T006 Create directory `isaac_ros/launch`
-- [X] T007 Create directory `nav2_humanoid/maps`
-- [X] T008 Create directory `nav2_humanoid/params`
-- [X] T009 Create directory `nav2_humanoid/launch`
+- [x] T001 Create directory `docs/nvidia-isaac`
+- [x] T002 Create `docs/nvidia-isaac/_category_.json`
+- [x] T003 Create directory `isaac_sim/assets`
+- [x] T004 Create directory `isaac_sim/environments`
+- [x] T005 Create directory `isaac_sim/scripts`
+- [x] T006 Create directory `isaac_ros/launch`
+- [x] T007 Create directory `nav2_humanoid/maps`
+- [x] T008 Create directory `nav2_humanoid/params`
+- [x] T009 Create directory `nav2_humanoid/launch`
 
 ---
 
@@ -24,10 +24,10 @@
 
 ### Implementation for User Story 1
 
-- [X] T010 [US1] Create `docs/nvidia-isaac/chapter1.md`
-- [X] T011 [US1] Write content for "Isaac Sim & Synthetic Data Generation" in `docs/nvidia-isaac/chapter1.md`
-- [X] T012 [US1] Create a basic Isaac Sim scene file in `isaac_sim/environments/basic_scene.usd`
-- [X] T013 [US1] Create an Isaac Sim script to load and run the basic scene in `isaac_sim/scripts/run_basic_scene.py`
+- [x] T010 [US1] Create `docs/nvidia-isaac/chapter1.md`
+- [x] T011 [US1] Write content for "Isaac Sim & Synthetic Data Generation" in `docs/nvidia-isaac/chapter1.md`
+- [x] T012 [US1] Create a basic Isaac Sim scene file in `isaac_sim/environments/basic_scene.usd`
+- [x] T013 [US1] Create an Isaac Sim script to load and run the basic scene in `isaac_sim/scripts/run_basic_scene.py`
 
 ---
 
@@ -39,10 +39,10 @@
 
 ### Implementation for User Story 2
 
-- [X] T014 [US2] Create `docs/nvidia-isaac/chapter2.md`
-- [X] T015 [US2] Write content for "Isaac ROS & Visual SLAM" in `docs/nvidia-isaac/chapter2.md`
-- [X] T016 [US2] Create an Isaac Sim script to publish camera and IMU data to ROS 2 in `isaac_sim/scripts/publish_sensor_data.py`
-- [X] T017 [US2] Create a ROS 2 launch file for Isaac ROS VSLAM in `isaac_ros/launch/vslam_pipeline.launch.py`
+- [x] T014 [US2] Create `docs/nvidia-isaac/chapter2.md`
+- [x] T015 [US2] Write content for "Isaac ROS & Visual SLAM" in `docs/nvidia-isaac/chapter2.md`
+- [x] T016 [US2] Create an Isaac Sim script to publish camera and IMU data to ROS 2 in `isaac_sim/scripts/publish_sensor_data.py`
+- [x] T017 [US2] Create a ROS 2 launch file for Isaac ROS VSLAM in `isaac_ros/launch/vslam_pipeline.launch.py`
 
 ---
 
@@ -54,19 +54,19 @@
 
 ### Implementation for User Story 3
 
-- [X] T018 [US3] Create `docs/nvidia-isaac/chapter3.md`
-- [X] T019 [US3] Write content for "Nav2 Path Planning for Bipedal Humanoids" in `docs/nvidia-isaac/chapter3.md`
-- [X] T020 [US3] Create a basic humanoid robot model for Isaac Sim/ROS 2 in `isaac_sim/assets/humanoid_robot.usd`
-- [X] T021 [US3] Create Nav2 configuration parameters for bipedal humanoid in `nav2_humanoid/params/humanoid_nav2_params.yaml`
-- [X] T022 [US3] Create a ROS 2 launch file for Nav2 with humanoid configuration in `nav2_humanoid/launch/humanoid_navigation.launch.py`
+- [x] T018 [US3] Create `docs/nvidia-isaac/chapter3.md`
+- [x] T019 [US3] Write content for "Nav2 Path Planning for Bipedal Humanoids" in `docs/nvidia-isaac/chapter3.md`
+- [x] T020 [US3] Create a basic humanoid robot model for Isaac Sim/ROS 2 in `isaac_sim/assets/humanoid_robot.usd`
+- [x] T021 [US3] Create Nav2 configuration parameters for bipedal humanoid in `nav2_humanoid/params/humanoid_nav2_params.yaml`
+- [x] T022 [US3] Create a ROS 2 launch file for Nav2 with humanoid configuration in `nav2_humanoid/launch/humanoid_navigation.launch.py`
 
 ---
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [X] T023 Configure `docusaurus.config.ts` to include the new module
-- [X] T024 Configure `sidebars.ts` to include the new module sidebar
-- [X] T025 Add installation instructions for NVIDIA Isaac Sim, Isaac ROS, and Nav2 in `docs/nvidia-isaac/installation.md`
+- [x] T023 Configure `docusaurus.config.ts` to include the new module
+- [x] T024 Configure `sidebars.ts` to include the new module sidebar
+- [x] T025 Add installation instructions for NVIDIA Isaac Sim, Isaac ROS, and Nav2 in `docs/nvidia-isaac/installation.md`
 
 ---
 

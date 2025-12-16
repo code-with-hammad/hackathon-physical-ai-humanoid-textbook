@@ -1,5 +1,5 @@
 ---
-title: "NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation"
+title: 'NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation'
 ---
 
 # NVIDIA Isaac Sim, Photorealistic Simulation, and Synthetic Data Generation
@@ -11,6 +11,7 @@ NVIDIA Isaac Sim, built on the NVIDIA Omniverse platform, is a powerful and exte
 ## 1. NVIDIA Isaac Sim: A Robotics Simulation Platform
 
 Isaac Sim leverages the Universal Scene Description (USD) framework for its scene representation, allowing for collaborative and extensible simulation environments. It integrates NVIDIA's advanced technologies, including:
+
 - **PhysX**: For accurate and high-performance rigid body dynamics, fluid dynamics, and cloth simulation.
 - **RTX**: For photorealistic real-time rendering, enabling visually accurate sensor data generation.
 - **Omniverse Kit SDK**: Provides a flexible framework for building custom tools and extensions.
@@ -29,6 +30,7 @@ Photorealistic rendering in Isaac Sim is crucial for creating synthetic data tha
 ## 3. Synthetic Data Generation for AI Training
 
 Synthetic data is artificially generated data that can be used to train machine learning models. It offers several advantages over real-world data, including:
+
 - **Scalability**: Generate vast amounts of diverse data quickly and cost-effectively.
 - **Control**: Precise control over data characteristics, environmental conditions, and object properties.
 - **Annotation**: Perfect ground truth annotations (e.g., segmentation masks, bounding boxes, depth maps) are automatically available.
@@ -50,7 +52,7 @@ This example demonstrates how to load and run a pre-defined USD scene in Isaac S
 4.  **Double-click the scene file (e.g., `simple_room.usd`) to load it.**
 5.  **Click the "Play" button in the timeline controls** to start the simulation. You should observe physics interactions and rendering.
 
-*(Code example for a simple Python script to load and run a USD scene, as seen in `isaac_sim/scripts/run_basic_scene.py` from previous implementation chapters, would be included here to show programmatic control.)*
+_(Code example for a simple Python script to load and run a USD scene, as seen in `isaac_sim/scripts/run_basic_scene.py` from previous implementation chapters, would be included here to show programmatic control.)_
 
 **Practical Isaac Sim Example 2: Basic Synthetic Data Generation**
 
@@ -59,6 +61,7 @@ This example outlines a conceptual Python script using the Replicator API to gen
 1.  **Setup Isaac Sim and Omniverse Kit SDK environment.**
 
 2.  **Conceptual Python Script for Data Generation:**
+
     ```python
     import omni.replicator.core as rep
     from omni.isaac.kit import SimulationApp
@@ -89,6 +92,7 @@ This example outlines a conceptual Python script using the Replicator API to gen
 
     simulation_app.shutdown()
     ```
+
     This script would generate 100 frames of RGB and depth data, with randomized cube positions and colors, saving them to the `synthetic_data` directory.
 
 ## Conclusion
@@ -97,6 +101,6 @@ NVIDIA Isaac Sim offers a robust and flexible platform for high-fidelity robotic
 
 ## References
 
-NVIDIA. (n.d.). *NVIDIA Isaac Sim*. Retrieved from [https://developer.nvidia.com/isaac-sim](https://developer.nvidia.com/isaac-sim)
+NVIDIA. (n.d.). _NVIDIA Isaac Sim_. Retrieved from [https://developer.nvidia.com/isaac-sim](https://developer.nvidia.com/isaac-sim)
 
-Sims, J., & Weng, X. (2020). *The Role of Synthetic Data in Deep Learning*. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops* (pp. 950-951).
+Sims, J., & Weng, X. (2020). _The Role of Synthetic Data in Deep Learning_. In _Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops_ (pp. 950-951).

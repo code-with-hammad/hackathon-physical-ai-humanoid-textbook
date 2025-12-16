@@ -23,9 +23,9 @@ This chapter focuses on integrating human-robot interaction within the Unity env
 - Designing user interfaces and controls within Unity for human interaction.
 - Simulating human presence and actions within the digital twin.
 - Examples of interactive elements:
-    - Teleoperation interfaces.
-    - Gesture recognition and response.
-    - Augmented reality overlays for real-time data display.
+  - Teleoperation interfaces.
+  - Gesture recognition and response.
+  - Augmented reality overlays for real-time data display.
 
 ## Practical Exercises
 

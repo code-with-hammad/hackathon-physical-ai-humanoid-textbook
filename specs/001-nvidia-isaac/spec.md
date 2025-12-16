@@ -5,7 +5,7 @@
 **Status**: Draft  
 **Input**: User description: "Module 3: The AI-Robot Brain (NVIDIA Isaac)Target audience:AI/Robotics students with ROS 2 and simulation backgroundFocus:Advanced perception, synthetic data, and humanoid navigationChapters:1. Isaac Sim & Synthetic Data Generation 2. Isaac ROS & Visual SLAM 3. Nav2 Path Planning for Bipedal HumanoidsSuccess criteria:- Reader runs an Isaac Sim scene- Reader performs VSLAM with Isaac ROS- Reader plans humanoid paths using Nav2Constraints:- 2,500–3,500 words- Markdown, APA citations- Sources: NVIDIA Isaac + ROS/Nav2 official docs & peer-reviewedNot building:- Custom CUDA kernels- Proprietary datasets- Real-world hardware deployment"
 
-## User Scenarios & Testing *(mandatory)*
+## User Scenarios & Testing _(mandatory)_
 
 ### User Story 1 - Run an Isaac Sim Scene (Priority: P1)
 
@@ -56,7 +56,7 @@ An AI/Robotics student can configure and utilize the ROS 2 Navigation Stack (Nav
 - How does the system handle noisy or sparse sensor data for VSLAM?
 - What if Nav2 generates an unreachable or invalid path for the humanoid?
 
-## Requirements *(mandatory)*
+## Requirements _(mandatory)_
 
 ### Functional Requirements
 
@@ -66,7 +66,7 @@ An AI/Robotics student can configure and utilize the ROS 2 Navigation Stack (Nav
 - **FR-004**: The system MUST provide instructions and examples for configuring Nav2 for bipedal humanoid path planning.
 - **FR-005**: The system MUST integrate with ROS 2 for communication between simulation and navigation components.
 
-### Key Entities *(include if feature involves data)*
+### Key Entities _(include if feature involves data)_
 
 - **Isaac Sim**: NVIDIA's Omniverse-based simulation platform for robotics.
 - **Isaac ROS**: NVIDIA's collection of ROS 2 packages for robotics acceleration.
@@ -76,7 +76,7 @@ An AI/Robotics student can configure and utilize the ROS 2 Navigation Stack (Nav
 - **Visual SLAM**: Simultaneous Localization and Mapping using visual input.
 - **Path Planning**: Algorithm to find a collision-free path from a start to a goal.
 
-## Success Criteria *(mandatory)*
+## Success Criteria _(mandatory)_
 
 ### Measurable Outcomes
 

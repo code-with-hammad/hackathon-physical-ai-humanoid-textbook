@@ -16,22 +16,22 @@ links:
   adr: null
   pr: null
 files:
- - .gitignore
- - .npmignore
- - docs/ros2-nervous-system/_category_.json
- - docs/ros2-nervous-system/chapter1.md
- - docs/ros2-nervous-system/chapter2.md
- - docs/ros2-nervous-system/chapter3.md
- - docs/ros2-nervous-system/installation.md
- - scripts/run_ros_node.py
- - scripts/ping_publisher.py
- - scripts/pong_subscriber.py
- - urdf/humanoid.urdf
- - docusaurus.config.ts
- - sidebars.ts
- - specs/001-ros2-nervous-system/tasks.md
+  - .gitignore
+  - .npmignore
+  - docs/ros2-nervous-system/_category_.json
+  - docs/ros2-nervous-system/chapter1.md
+  - docs/ros2-nervous-system/chapter2.md
+  - docs/ros2-nervous-system/chapter3.md
+  - docs/ros2-nervous-system/installation.md
+  - scripts/run_ros_node.py
+  - scripts/ping_publisher.py
+  - scripts/pong_subscriber.py
+  - urdf/humanoid.urdf
+  - docusaurus.config.ts
+  - sidebars.ts
+  - specs/001-ros2-nervous-system/tasks.md
 tests:
- - none
+  - none
 ---
 
 ## Prompt

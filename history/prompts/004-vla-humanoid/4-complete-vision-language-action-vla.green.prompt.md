@@ -9,7 +9,7 @@ feature: 004-vla-humanoid
 branch: 004-vla-humanoid
 user: user
 command: /sp.implement
-labels: ["implementation"]
+labels: ['implementation']
 links:
   spec: specs/004-vla-humanoid/spec.md
   ticket: null
@@ -32,8 +32,7 @@ files:
   - docusaurus.config.ts
   - sidebars.ts
   - specs/004-vla-humanoid/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

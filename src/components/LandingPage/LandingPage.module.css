@@ -1,0 +1,83 @@
+/* src/components/LandingPage/LandingPage.module.css */
+
+.landingPageContainer {
+  display: flex;
+  flex-direction: row; /* Default for desktop */
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  gap: 40px;
+}
+
+.centerSection {
+  flex: 2; /* Takes more space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  max-width: 700px; /* Limit width of center section */
+}
+
+.bookTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--ifm-color-primary); /* Use Docusaurus primary color */
+}
+
+.bookDefinition {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--ifm-font-color-base);
+}
+
+.startButton {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.startButton:hover {
+  transform: scale(1.05);
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.sideSection {
+  flex: 1; /* Takes less space */
+  background-color: var(--ifm-background-surface-color); /* Use Docusaurus background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--ifm-global-shadow-md);
+  max-width: 300px;
+}
+
+.sideSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--ifm-color-primary);
+  text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 996px) { /* Docusaurus --ifm-container-width-lg breakpoint */
+  .landingPageContainer {
+    flex-direction: column; /* Stack vertically on smaller screens */
+    align-items: center;
+  }
+
+  .centerSection, .sideSection {
+    max-width: 100%; /* Take full width on mobile */
+    flex: none;
+  }
+
+  .sideSection {
+    margin-top: 40px;
+  }
+}

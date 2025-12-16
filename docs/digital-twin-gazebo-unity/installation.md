@@ -31,8 +31,8 @@ Follow these steps to install Unity Hub and a compatible Unity Editor version.
 This section covers how to set up communication between ROS 2 and Unity.
 
 1.  **Install ROS-Unity Integration Package**:
-    *   Open your Unity project (initialized in `unity/`).
-    *   Import the ROS-Unity Integration package (e.g., `ROS-TCP-Connector`, `ROS-Unity-Message-Generation`) via the Unity Package Manager or by importing a `.unitypackage` file.
+    - Open your Unity project (initialized in `unity/`).
+    - Import the ROS-Unity Integration package (e.g., `ROS-TCP-Connector`, `ROS-Unity-Message-Generation`) via the Unity Package Manager or by importing a `.unitypackage` file.
 2.  **Configure ROS 2 Workspace**: Ensure your ROS 2 environment is sourced and any necessary ROS 2 packages for Unity communication are built.
     ```bash
     source /opt/ros/YOUR_ROS2_DISTRO/setup.bash

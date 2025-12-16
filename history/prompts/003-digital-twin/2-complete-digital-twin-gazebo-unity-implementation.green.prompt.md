@@ -9,7 +9,7 @@ feature: 003-digital-twin
 branch: 003-digital-twin
 user: user
 command: /sp.implement
-labels: ["implementation"]
+labels: ['implementation']
 links:
   spec: specs/003-digital-twin/spec.md
   ticket: null
@@ -32,8 +32,7 @@ files:
   - unity/Assets/Scenes/ROBOT_VISUALIZATION_SCENE.md
   - unity/Assets/Scripts/Ros2RobotSubscriber.cs
   - specs/003-digital-twin/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

@@ -4,8 +4,8 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [X] T001 Initialize Docusaurus site
-- [X] T002 Create directory structure in `docs/ros2-nervous-system`
+- [x] T001 Initialize Docusaurus site
+- [x] T002 Create directory structure in `docs/ros2-nervous-system`
 
 ---
 
@@ -17,9 +17,9 @@
 
 ### Implementation for User Story 1
 
-- [X] T003 [US1] Create `docs/ros2-nervous-system/chapter1.md`
-- [X] T004 [US1] Write content for running a ROS 2 node in `docs/ros2-nervous-system/chapter1.md`
-- [X] T005 [US1] Add a script to run a ROS 2 node in `scripts/run_ros_node.py`
+- [x] T003 [US1] Create `docs/ros2-nervous-system/chapter1.md`
+- [x] T004 [US1] Write content for running a ROS 2 node in `docs/ros2-nervous-system/chapter1.md`
+- [x] T005 [US1] Add a script to run a ROS 2 node in `scripts/run_ros_node.py`
 
 ---
 
@@ -31,9 +31,9 @@
 
 ### Implementation for User Story 2
 
-- [X] T006 [US2] Create `docs/ros2-nervous-system/chapter2.md`
-- [X] T007 [US2] Write content for bridging a Python agent to ROS in `docs/ros2-nervous-system/chapter2.md`
-- [X] T008 [US2] Add a Python script for the agent in `scripts/python_agent.py`
+- [x] T006 [US2] Create `docs/ros2-nervous-system/chapter2.md`
+- [x] T007 [US2] Write content for bridging a Python agent to ROS in `docs/ros2-nervous-system/chapter2.md`
+- [x] T008 [US2] Add a Python script for the agent in `scripts/python_agent.py`
 
 ---
 
@@ -45,18 +45,18 @@
 
 ### Implementation for User Story 3
 
-- [X] T009 [US3] Create `docs/ros2-nervous-system/chapter3.md`
-- [X] T010 [US3] Write content for building a URDF model in `docs/ros2-nervous-system/chapter3.md`
-- [X] T011 [US3] Add a URDF file in `urdf/humanoid.urdf`
+- [x] T009 [US3] Create `docs/ros2-nervous-system/chapter3.md`
+- [x] T010 [US3] Write content for building a URDF model in `docs/ros2-nervous-system/chapter3.md`
+- [x] T011 [US3] Add a URDF file in `urdf/humanoid.urdf`
 
 ---
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [X] T012 Configure `docs/ros2-nervous-system/_category_.json`
-- [X] T013 Configure `docusaurus.config.js`
-- [X] T014 Configure `sidebars.js`
-- [X] T015 Add installation instructions for ROS 2 and other dependencies in `docs/ros2-nervous-system/installation.md`
+- [x] T012 Configure `docs/ros2-nervous-system/_category_.json`
+- [x] T013 Configure `docusaurus.config.js`
+- [x] T014 Configure `sidebars.js`
+- [x] T015 Add installation instructions for ROS 2 and other dependencies in `docs/ros2-nervous-system/installation.md`
 
 ---
 

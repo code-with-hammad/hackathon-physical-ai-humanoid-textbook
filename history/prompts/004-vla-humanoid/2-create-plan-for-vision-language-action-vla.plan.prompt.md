@@ -9,7 +9,7 @@ feature: 004-vla-humanoid
 branch: 004-vla-humanoid
 user: user
 command: /sp.plan
-labels: ["planning", "architecture"]
+labels: ['planning', 'architecture']
 links:
   spec: specs/004-vla-humanoid/spec.md
   ticket: null
@@ -22,8 +22,7 @@ files:
   - specs/004-vla-humanoid/contracts/README.md
   - specs/004-vla-humanoid/quickstart.md
   - GEMINI.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

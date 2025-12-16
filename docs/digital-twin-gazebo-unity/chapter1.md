@@ -9,6 +9,7 @@ This chapter will delve into the fundamental physics simulations within Gazebo, 
 ## Gravity
 
 Gazebo provides robust support for simulating gravitational forces. We will explore:
+
 - How to define and modify gravity in a Gazebo world file.
 - The impact of gravity on various simulated entities, such as robots and objects.
 - Examples of configuring different gravitational settings for diverse simulation scenarios.
@@ -16,6 +17,7 @@ Gazebo provides robust support for simulating gravitational forces. We will expl
 ## Collisions
 
 Accurate collision detection and response are vital for robotic simulations. This section will cover:
+
 - The principles of collision geometries and their importance in Gazebo.
 - How to define collision shapes for robot links and static objects in SDF (Simulation Description Format).
 - The distinction between visual and collision models.

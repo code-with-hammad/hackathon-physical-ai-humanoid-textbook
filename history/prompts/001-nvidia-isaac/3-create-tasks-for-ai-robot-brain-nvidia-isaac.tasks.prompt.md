@@ -9,7 +9,7 @@ feature: 001-nvidia-isaac
 branch: 001-nvidia-isaac
 user: user
 command: /sp.tasks
-labels: ["task-generation"]
+labels: ['task-generation']
 links:
   spec: specs/001-nvidia-isaac/spec.md
   ticket: null
@@ -17,8 +17,7 @@ links:
   pr: null
 files:
   - specs/001-nvidia-isaac/tasks.md
-tests:
-  null
+tests: null
 ---
 
 ## Prompt

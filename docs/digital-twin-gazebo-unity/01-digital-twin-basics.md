@@ -1,5 +1,5 @@
 ---
-title: "Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling"
+title: 'Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling'
 ---
 
 # Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collision Modeling
@@ -9,6 +9,7 @@ title: "Digital Twin Concepts, Physics Simulation in Gazebo, Gravity and Collisi
 A **Digital Twin** is a virtual replica of a physical entity, process, or system. It serves as a bridge between the physical and digital worlds, allowing for real-time monitoring, analysis, and simulation of its physical counterpart. Digital twins are increasingly utilized across various industries, including manufacturing, healthcare, and robotics, to optimize performance, predict failures, and facilitate remote operation and testing (Grieves & Vickers, 2017).
 
 In robotics, digital twins enable developers and researchers to:
+
 - Test and validate control algorithms in a safe, virtual environment.
 - Simulate complex physical interactions without risking damage to real hardware.
 - Generate large datasets for machine learning applications.
@@ -31,7 +32,8 @@ Gazebo world files (`.world` files) allow users to define the gravity vector. By
 To observe gravity, you can launch a simple Gazebo world with an object that is not constrained. The object should fall due to gravity.
 
 1.  **Create a simple SDF model for a box:**
-    *(File: `gazebo/models/falling_box/model.sdf`)*
+    _(File: `gazebo/models/falling_box/model.sdf`)_
+
     ```xml
     <?xml version="1.0" ?>
     <sdf version="1.8">
@@ -58,7 +60,7 @@ To observe gravity, you can launch a simple Gazebo world with an object that is 
     ```
 
 2.  **Create a world file that includes the box and a ground plane:**
-    *(File: `gazebo/worlds/gravity_test_world.world`)*
+    _(File: `gazebo/worlds/gravity_test_world.world`)_
     ```xml
     <?xml version="1.0" ?>
     <sdf version="1.8">
@@ -85,10 +87,12 @@ To observe gravity, you can launch a simple Gazebo world with an object that is 
 **Collisions** are physical interactions between two or more objects when they come into contact. Accurate collision modeling is crucial for robots to interact realistically with their environment, detect obstacles, and avoid self-intersections. In Gazebo, each link of a robot or a static object can have one or more `<collision>` elements defined within its SDF.
 
 It's important to distinguish between visual models (`<visual>`) and collision models (`<collision>`).
+
 - The `<visual>` element defines how an object looks (its mesh, colors, textures).
 - The `<collision>` element defines the physical shape used for collision detection. Often, simpler geometric primitives (boxes, cylinders, spheres) are used for collision models to reduce computational complexity, even if the visual model is more detailed.
 
 Key properties within a `<collision>` element include:
+
 - **Geometry**: The shape of the collision body (box, sphere, cylinder, mesh).
 - **Surface properties**: Friction (how objects slide against each other) and restitution (how bouncy objects are).
 
@@ -99,7 +103,8 @@ This example demonstrates how to set up two boxes that collide.
 1.  **Use the `falling_box` model from Example 1.**
 
 2.  **Modify the world file to include a static box:**
-    *(File: `gazebo/worlds/collision_test_world.world`)*
+    _(File: `gazebo/worlds/collision_test_world.world`)_
+
     ```xml
     <?xml version="1.0" ?>
     <sdf version="1.8">
@@ -138,6 +143,7 @@ This example demonstrates how to set up two boxes that collide.
       </world>
     </sdf>
     ```
+
     When launched, the `falling_box` will collide with the `static_box` and then settle on it, demonstrating collision detection and response.
 
 ## Conclusion
@@ -146,6 +152,6 @@ Understanding digital twin concepts and mastering physics simulation in Gazebo, 
 
 ## References
 
-Grieves, M., & Vickers, J. (2017). Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems. In *Transdisciplinary Perspectives on Complex Systems: New Findings and Approaches* (pp. 85-113). Springer.
+Grieves, M., & Vickers, J. (2017). Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems. In _Transdisciplinary Perspectives on Complex Systems: New Findings and Approaches_ (pp. 85-113). Springer.
 
-Koenig, N., & Howard, A. (2004). Design and Use of Gazebo, an Open-Source Multi-Robot Simulator. In *IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)* (Vol. 3, pp. 2149-2154).
+Koenig, N., & Howard, A. (2004). Design and Use of Gazebo, an Open-Source Multi-Robot Simulator. In _IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_ (Vol. 3, pp. 2149-2154).

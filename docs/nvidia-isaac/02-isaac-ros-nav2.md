@@ -13,6 +13,7 @@ Building on the foundation of NVIDIA Isaac Sim for photorealistic simulation and
 **Isaac ROS** is a collection of ROS 2 packages that leverage NVIDIA GPUs to accelerate robotics applications, particularly in areas like perception, planning, and simulation. By offloading computationally intensive tasks to the GPU, Isaac ROS dramatically improves throughput and reduces latency, making real-time performance achievable for complex algorithms (NVIDIA, n.d.-a).
 
 Key benefits of Isaac ROS include:
+
 - **GPU Acceleration**: Utilizes CUDA, cuDNN, and TensorRT for optimized execution of deep learning models and computer vision algorithms.
 - **Optimized ROS 2 Nodes**: Provides pre-optimized ROS 2 nodes for common robotics tasks, ready for integration into existing workflows.
 - **Modular Architecture**: Designed for flexibility, allowing developers to easily swap or customize components.
@@ -22,6 +23,7 @@ Key benefits of Isaac ROS include:
 **Visual SLAM (Simultaneous Localization and Mapping)** is a critical perception task where a robot simultaneously estimates its own pose (localization) and constructs a map of its surroundings. VSLAM is computationally demanding, especially when processing high-resolution camera data. Isaac ROS offers hardware-accelerated VSLAM solutions that provide robust and real-time mapping and localization.
 
 Isaac ROS VSLAM modules typically process:
+
 - **Camera Data**: Monocular, stereo, or RGB-D images.
 - **IMU Data**: Inertial measurements for improved pose estimation and robustness.
 
@@ -32,9 +34,10 @@ The output includes a map (e.g., point cloud, occupancy grid) and the robot's es
 This example outlines how to set up an Isaac ROS VSLAM pipeline using a launch file.
 
 1.  **Ensure Isaac Sim is publishing camera and IMU data to ROS 2 topics.**
-    *(Refer to `isaac_sim/scripts/publish_sensor_data.py` from the previous chapter.)*
+    _(Refer to `isaac_sim/scripts/publish_sensor_data.py` from the previous chapter.)_
 2.  **Use the Isaac ROS VSLAM launch file:**
-    *(File: `isaac_ros/launch/vslam_pipeline.launch.py`)*
+    _(File: `isaac_ros/launch/vslam_pipeline.launch.py`)_
+
     ```python
     # See isaac_ros/launch/vslam_pipeline.launch.py for full content
     from launch import LaunchDescription
@@ -66,6 +69,7 @@ This example outlines how to set up an Isaac ROS VSLAM pipeline using a launch f
             OpaqueFunction(function=launch_setup)
         ])
     ```
+
     This launch file starts the VSLAM node, configuring it to subscribe to camera and IMU topics and publish map and pose information.
 
 ## 2. Nav2 Path Planning for Humanoid Robots
@@ -73,6 +77,7 @@ This example outlines how to set up an Isaac ROS VSLAM pipeline using a launch f
 **Nav2** is the ROS 2 navigation stack, providing a framework for autonomous mobile robot navigation. While traditionally optimized for wheeled robots, its modular design allows for adaptation to more complex platforms like bipedal humanoids (Nav2 Working Group, n.d.). Adapting Nav2 for humanoids involves considering their unique locomotion constraints and stability requirements.
 
 Key components of Nav2:
+
 - **Global Planner**: Plans a high-level, collision-free path from start to goal.
 - **Local Planner (Controller)**: Generates velocity commands to follow the global path while avoiding local obstacles.
 - **Recovery Behaviors**: Strategies to recover from navigation failures (e.g., getting stuck).
@@ -83,6 +88,7 @@ Key components of Nav2:
 The primary challenge in adapting Nav2 for humanoids lies in their non-holonomic, dynamic locomotion. Humanoids have complex gait patterns, stability constraints, and often require footstep planning rather than simple velocity commands.
 
 Customizations typically involve:
+
 - **Humanoid-Specific Global Planners**: While standard planners can generate paths, they might not be kinematically feasible for a humanoid. Integration with footstep planners can generate more appropriate high-level plans.
 - **Custom Local Planners/Controllers**: The local planner needs to account for the humanoid's gait, balance, and stability. This might involve generating joint trajectories or motion primitives instead of direct `Twist` commands.
 - **Costmap Tuning**: Adjusting inflation layers and incorporating humanoid-specific cost functions (e.g., penalizing unstable terrain).
@@ -93,7 +99,8 @@ This example outlines a launch file to bring up Nav2 with humanoid-specific conf
 
 1.  **Ensure Isaac ROS VSLAM is publishing map and pose data.**
 2.  **Use the custom Nav2 launch file:**
-    *(File: `nav2_humanoid/launch/humanoid_navigation.launch.py`)*
+    _(File: `nav2_humanoid/launch/humanoid_navigation.launch.py`)_
+
     ```python
     # See nav2_humanoid/launch/humanoid_navigation.launch.py for full content
     from launch import LaunchDescription
@@ -132,6 +139,7 @@ This example outlines a launch file to bring up Nav2 with humanoid-specific conf
             ])
         ])
     ```
+
     This launch file integrates the customized Nav2 parameters for humanoid navigation, allowing the stack to utilize the map and pose information from Isaac ROS VSLAM.
 
 ## Conclusion
@@ -140,8 +148,8 @@ NVIDIA Isaac ROS provides the essential hardware acceleration for demanding perc
 
 ## References
 
-Nav2 Working Group. (n.d.). *ROS 2 Navigation Stack (Nav2)*. Retrieved from [https://navigation.ros.org/](https://navigation.ros.org/)
+Nav2 Working Group. (n.d.). _ROS 2 Navigation Stack (Nav2)_. Retrieved from [https://navigation.ros.org/](https://navigation.ros.org/)
 
-NVIDIA. (n.d.-a). *Isaac ROS*. Retrieved from [https://developer.nvidia.com/isaac-ros](https://developer.nvidia.com/isaac-ros)
+NVIDIA. (n.d.-a). _Isaac ROS_. Retrieved from [https://developer.nvidia.com/isaac-ros](https://developer.nvidia.com/isaac-ros)
 
-Sims, J., & Weng, X. (2020). *The Role of Synthetic Data in Deep Learning*. In *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops* (pp. 950-951).
+Sims, J., & Weng, X. (2020). _The Role of Synthetic Data in Deep Learning_. In _Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops_ (pp. 950-951).
