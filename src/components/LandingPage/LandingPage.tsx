@@ -21,17 +21,14 @@ const LandingPage = () => {
           Start Reading
         </Link>
       </div>
-      <div className={styles.sideSection}>
-        <h2>Modules</h2>
-        {modules.map((module, index) => (
-          <ModuleCard
-            key={index}
-            moduleName={module.name}
-            chapters={module.chapters}
-            icon={module.icon}
-          />
-        ))}
-      </div>
+      {modules.map((module, index) => (
+        <ModuleCard
+          key={index}
+          moduleName={module.name}
+          chapters={module.chapters}
+          icon={module.icon}
+        />
+      ))}
     </div>
   );
 };

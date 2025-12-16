@@ -2,11 +2,10 @@
 
 .landingPageContainer {
   display: flex;
-  flex-direction: row; /* Default for desktop */
+  flex-direction: column; /* Stack vertically */
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
+  align-items: center; /* Center items */
   padding: 20px;
-  gap: 40px;
 }
 
 .centerSection {
@@ -49,22 +48,6 @@
   background-color: var(--ifm-color-primary-dark);
 }
 
-.sideSection {
-  flex: 1; /* Takes less space */
-  background-color: var(--ifm-background-surface-color); /* Use Docusaurus background color */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: var(--ifm-global-shadow-md);
-  max-width: 300px;
-}
-
-.sideSection h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: var(--ifm-color-primary);
-  text-align: center;
-}
-
 /* Mobile responsiveness */
 @media (max-width: 996px) { /* Docusaurus --ifm-container-width-lg breakpoint */
   .landingPageContainer {
@@ -72,12 +55,8 @@
     align-items: center;
   }
 
-  .centerSection, .sideSection {
+  .centerSection {
     max-width: 100%; /* Take full width on mobile */
     flex: none;
-  }
-
-  .sideSection {
-    margin-top: 40px;
   }
 }
