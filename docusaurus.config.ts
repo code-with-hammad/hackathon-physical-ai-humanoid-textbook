@@ -80,7 +80,7 @@ const config: Config = {
       title: 'AI-Spec–Driven Technical Book',
       logo: {
         alt: 'AI-Spec–Driven Technical Book Logo',
-        src: 'img/robot-logo.svg',
+        src: 'img/robotic image.webp',
       },
       items: [
         {
