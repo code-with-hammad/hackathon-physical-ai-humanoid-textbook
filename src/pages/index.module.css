@@ -1,23 +1,195 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* src/pages/index.module.css */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+/* General Container */
+.container {
+  font-family: 'Orbitron', sans-serif;
   position: relative;
   overflow: hidden;
+  background: #0a0a0a;
+  color: #fff;
+  padding: 0 20px;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+/* Floating Robots / Background Animations */
+.floatingRobots img {
+  position: absolute;
+  width: 80px;
+  opacity: 0.2;
+  animation: float 15s linear infinite;
+}
+
+.robot1 {
+  top: 10%;
+  left: 5%;
+  animation-delay: 0s;
+}
+.robot2 {
+  top: 50%;
+  left: 80%;
+  animation-delay: 5s;
+}
+.robot3 {
+  top: 70%;
+  left: 30%;
+  animation-delay: 10s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
   }
 }
 
-.buttons {
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #0ff, #f0f, #ff6ec4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow:
+      0 0 5px #0ff,
+      0 0 10px #f0f,
+      0 0 20px #ff6ec4;
+  }
+  100% {
+    text-shadow:
+      0 0 15px #0ff,
+      0 0 30px #f0f,
+      0 0 40px #ff6ec4;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 0.5s;
+  color: #0ff;
+}
+
+.description {
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 20px auto;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards 1s;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 50px;
+  font-size: 1.2rem;
+  color: #0ff;
+  border: 2px solid #0ff;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  animation: fadeIn 1.5s forwards 1.5s;
+}
+
+.cta:hover {
+  transform: scale(1.1);
+  box-shadow:
+    0 0 20px #0ff,
+    0 0 40px #f0f;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Modules Section */
+.modulesSection {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.modulesHeading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #f0f;
+}
+
+/* Horizontal Tabs Container */
+.tabsContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scrollbar-width: none;
+}
+
+.tabsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Module Cards */
+.tabCard {
+  flex: 0 0 240px;
+  background: linear-gradient(145deg, #111, #222);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #0ff;
+}
+
+.tabCard:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 0 25px #0ff,
+    0 0 50px #f0f;
+}
+
+.tabCard h3 {
+  margin: 10px 0;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.tabCard p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.moduleImg {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px #0ff);
 }

@@ -22,20 +22,20 @@ This chapter introduces the concept of controlling humanoid robots through natur
 
 - Designing a robust action space for the humanoid robot (e.g., `move_forward`, `turn_left`, `grasp_object`, `say_phrase`).
 - Creating a mapping mechanism:
-    - Rule-based parsing of transcribed text to extract actions and parameters.
-    - Using regular expressions or simple NLP techniques.
+  - Rule-based parsing of transcribed text to extract actions and parameters.
+  - Using regular expressions or simple NLP techniques.
 - Publishing mapped actions as ROS 2 commands (e.g., topic messages, service calls, action goals).
 
 ## 4. Building a ROS 2 Whisper Node
 
 - Developing a ROS 2 Python node that:
-    - Subscribes to audio input (e.g., from a microphone ROS 2 driver).
-    - Calls OpenAI Whisper for transcription.
-    - Publishes transcribed text to a ROS 2 topic.
+  - Subscribes to audio input (e.g., from a microphone ROS 2 driver).
+  - Calls OpenAI Whisper for transcription.
+  - Publishes transcribed text to a ROS 2 topic.
 - Developing a ROS 2 Python node for action mapping that:
-    - Subscribes to transcribed text.
-    - Parses text and maps to robot actions.
-    - Publishes robot action commands to a ROS 2 topic/service.
+  - Subscribes to transcribed text.
+  - Parses text and maps to robot actions.
+  - Publishes robot action commands to a ROS 2 topic/service.
 
 ## Practical Exercises
 

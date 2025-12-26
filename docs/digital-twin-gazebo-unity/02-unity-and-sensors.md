@@ -1,5 +1,5 @@
 ---
-title: "High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation"
+title: 'High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation'
 ---
 
 # High-fidelity Rendering in Unity, Human-Robot Interaction, and Sensor Simulation
@@ -13,6 +13,7 @@ Building upon the Gazebo physics simulation discussed in the previous chapter, t
 Unity's rendering capabilities allow for the creation of highly realistic virtual environments, which is essential for accurate visualization in digital twins. Photorealistic rendering enhances the perception of the robot's state and environment, providing valuable context for human operators and AI development (Unity Technologies, n.d.).
 
 Key aspects of high-fidelity rendering in Unity include:
+
 - **Physically Based Rendering (PBR)**: Using realistic material properties (albedo, metallic, roughness) to simulate how light interacts with surfaces.
 - **Advanced Lighting**: Implementing real-time global illumination, reflections, and shadows to create immersive scenes.
 - **Post-processing Effects**: Applying effects like bloom, ambient occlusion, depth of field, and color grading to achieve cinematic visuals.
@@ -23,6 +24,7 @@ Key aspects of high-fidelity rendering in Unity include:
 Unity's interactive nature makes it an excellent platform for developing intuitive and engaging Human-Robot Interaction interfaces. HRI focuses on how humans and robots can effectively communicate and collaborate. In a digital twin, Unity can serve as the primary interface for operators to monitor, control, and even teleoperate robots (Goodrich & Schultz, 2008).
 
 HRI features implementable in Unity:
+
 - **Real-time Visualization**: Displaying the robot's current state, sensor data, and planned paths in a 3D environment.
 - **Teleoperation Interfaces**: Creating virtual joysticks, buttons, and gesture-based controls for remote robot manipulation.
 - **Augmented Reality (AR) Overlays**: Projecting digital information onto the real-world view for contextual understanding.
@@ -128,6 +130,6 @@ Unity offers unparalleled capabilities for high-fidelity rendering and human-rob
 
 ## References
 
-Goodrich, M. A., & Schultz, A. C. (2008). *Human-Robot Interaction: A Survey*. Foundations and Trends in Human–Computer Interaction, 1(3), 203-276.
+Goodrich, M. A., & Schultz, A. C. (2008). _Human-Robot Interaction: A Survey_. Foundations and Trends in Human–Computer Interaction, 1(3), 203-276.
 
-Unity Technologies. (n.d.). *Real-Time 3D Development Platform*. Retrieved from [https://unity.com/](https://unity.com/)
+Unity Technologies. (n.d.). _Real-Time 3D Development Platform_. Retrieved from [https://unity.com/](https://unity.com/)

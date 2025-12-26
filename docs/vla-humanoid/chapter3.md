@@ -1,5 +1,5 @@
 ---
-title: "Capstone: Autonomous Humanoid"
+title: 'Capstone: Autonomous Humanoid'
 ---
 
 # Capstone: Autonomous Humanoid (End-to-End VLA)
@@ -29,10 +29,10 @@ This capstone chapter integrates all components developed in previous chapters t
 
 - Defining a set of complex, multi-step tasks for the autonomous humanoid (e.g., "Find the blue cube and place it on the red platform").
 - Evaluating the humanoid's ability to:
-    - Understand voice commands.
-    - Generate coherent plans.
-    - Execute plans robustly in simulation.
-    - Adapt to dynamic changes or unexpected events.
+  - Understand voice commands.
+  - Generate coherent plans.
+  - Execute plans robustly in simulation.
+  - Adapt to dynamic changes or unexpected events.
 
 ## 5. Performance and Robustness Evaluation
 

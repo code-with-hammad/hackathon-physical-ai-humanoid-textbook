@@ -6,10 +6,10 @@ This chapter focuses on integrating Python agents with the ROS 2 ecosystem using
 
 By the end of this chapter, you will be able to:
 
-*   Create Python-based ROS 2 nodes using `rclpy`.
-*   Implement publishers and subscribers in Python to exchange data.
-*   Develop ROS 2 services and clients in Python.
-*   Understand best practices for writing robust ROS 2 Python agents.
+- Create Python-based ROS 2 nodes using `rclpy`.
+- Implement publishers and subscribers in Python to exchange data.
+- Develop ROS 2 services and clients in Python.
+- Understand best practices for writing robust ROS 2 Python agents.
 
 ## Creating a Publisher-Subscriber Agent
 

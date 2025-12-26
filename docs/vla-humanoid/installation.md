@@ -28,11 +28,13 @@ If you haven't already, install a compatible ROS 2 distribution (e.g., Humble, I
 Depending on the LLM you choose, the setup process will vary:
 
 ### Option A: Cloud-based LLM (e.g., OpenAI GPT-4, Gemini API)
+
 - Obtain an API key for your chosen LLM provider.
 - Install the corresponding Python SDK (e.g., `pip install openai` for OpenAI, `pip install google-generativeai` for Gemini).
 - Configure your API key as an environment variable or securely load it in your application.
 
 ### Option B: Local LLM (e.g., Llama 3 via Ollama/LocalAI)
+
 - Install a local LLM server (e.g., Ollama, LocalAI).
 - Download the desired LLM model.
 - Ensure your ROS 2 nodes can communicate with the local LLM server.

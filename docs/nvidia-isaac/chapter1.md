@@ -29,8 +29,8 @@ This chapter introduces NVIDIA Isaac Sim as a powerful platform for robotics sim
 - The importance of synthetic data in AI/robotics.
 - Leveraging Isaac Sim's RTX renderer for realistic sensor data (RGB, depth, segmentation, bounding boxes).
 - Scripting data generation pipelines:
-    - Randomizing scene elements for data diversity.
-    - Capturing sensor data programmatically.
+  - Randomizing scene elements for data diversity.
+  - Capturing sensor data programmatically.
 - Exporting synthetic datasets for machine learning training.
 
 ## Practical Exercises

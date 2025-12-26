@@ -20,7 +20,7 @@ This chapter focuses on adapting the ROS 2 Navigation Stack (Nav2) for path plan
 
 ## 3. Configuring Nav2 for Humanoids
 
-- Adapting global planners (e.g., A*, Dijkstra) for humanoid gait constraints.
+- Adapting global planners (e.g., A\*, Dijkstra) for humanoid gait constraints.
 - Customizing local planners (e.g., DWB, TEB) to handle dynamic humanoid movements.
 - Tuning costmaps: inflation layers, static/dynamic obstacles.
 - Integrating with a humanoid-specific controller.
