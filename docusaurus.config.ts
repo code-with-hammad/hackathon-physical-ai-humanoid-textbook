@@ -20,7 +20,7 @@ const config: Config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  plugins: ['./plugins/nav-generator'],
+  // plugins: ['./plugins/nav-generator'], // Commented out since the plugin file doesn't exist
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
